@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Дарья](https://up.htmlacademy.ru/htmlcss/26/user/1115395).
-* Наставник: [Андрей Корейкин].
+* Наставник: [Андрей Корейкин](https://htmlacademy.ru/profile/ankormoreankor).
 
 ---
 
