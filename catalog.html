@@ -44,20 +44,56 @@
         <li>по типу</li>
         <li>по названию</li>
       </ul>
-      <h3>сетка:</h3>
-      <ul>
-        <li>Адаптивная</li>
-        <li>Фиксированная</li>
-        <li>Резиновая</li>
-      </ul>
-      <h3>особенности</h3>
-      <ul>
-        <li>Слайдер</li>
-        <li>Блок преимуществ</li>
-        <li>Новости</li>
-        <li>Галерея</li>
-        <li>Корзина</li>
-      </ul>
+      <h3 class="visually-hidden">сетка</h3>
+      <form method="get" action="index.html" method="post">
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+            <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid" value="fixed" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid" value="rubber" id="filter-rubber">
+              <label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+
+      <h3 class="visually-hidden">особенности</h3>
+      <form method="get" action="index.html" method="post">
+        <fieldset>
+          <legend>Особенности</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="benifits-block" id="filter-benefits-block">
+              <label for="filter-benefits-block">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="" value="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="" value="basket" id="filter-basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+
       <button type="button"> Показать</button>
       <h2> список шаблонов </h2>
       <ul>
@@ -116,7 +152,22 @@
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           Телефон: <a href="tel:+7812275-75-75">+7 (812) 275-75-75</a>
         </address>
-        <a href="contacts.html">Напишите нам</a>
+        <p>Напишите нам</p>
+        <form action="index.html" method="post">
+          <p>
+            <label for="appointment-name">Ваше имя:</label>
+            <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="appointment-email">Ваш e-mail:</label>
+            <input id="appointment-email" type="text" name="email" value="" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="appointment-text">Текст письма:</label>
+            <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
+          </p>
+          <button type="submit">Отправить</button>
+        </form>
       </section>
       <div>
         <p>Давайте дружить, это выгодно!</p>
