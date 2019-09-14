@@ -44,14 +44,13 @@
         <li>по типу</li>
         <li>по названию</li>
       </ul>
-      <h3 class="visually-hidden">сетка</h3>
-      <form method="get" action="index.html" method="post">
+      <form method="get" action="index.html">
         <fieldset>
           <legend>Сетка:</legend>
           <ul>
             <li>
               <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
-            <label for="filter-adaptive">Адаптивная</label>
+              <label for="filter-adaptive">Адаптивная</label>
             </li>
             <li>
               <input type="radio" name="grid" value="fixed" id="filter-fixed">
@@ -64,9 +63,7 @@
           </ul>
         </fieldset>
       </form>
-
-      <h3 class="visually-hidden">особенности</h3>
-      <form method="get" action="index.html" method="post">
+      <form method="get" action="index.html">
         <fieldset>
           <legend>Особенности</legend>
           <ul>
@@ -83,18 +80,17 @@
               <label for="filter-news">Новости</label>
             </li>
             <li>
-              <input type="checkbox" name="" value="gallery" id="filter-gallery">
+              <input type="checkbox" name="gallery" id="filter-gallery">
               <label for="filter-gallery">Галерея</label>
             </li>
             <li>
-              <input type="checkbox" name="" value="basket" id="filter-basket">
+              <input type="checkbox" name="basket" id="filter-basket">
               <label for="filter-basket">Корзина</label>
             </li>
           </ul>
         </fieldset>
+       <button type="submit">Показать</button>
       </form>
-
-      <button type="button"> Показать</button>
       <h2> список шаблонов </h2>
       <ul>
         <li>
@@ -160,7 +156,7 @@
           </p>
           <p>
             <label for="appointment-email">Ваш e-mail:</label>
-            <input id="appointment-email" type="text" name="email" value="" placeholder="email@example.com">
+            <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
           </p>
           <p>
             <label for="appointment-text">Текст письма:</label>
