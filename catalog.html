@@ -8,7 +8,7 @@
   <header>
     <nav>
       <a href="index.html">
-        <img src="img/svg-my-version\nerds-logo.svg" width="160" height="65" alt="Нёрдс">
+        <img src="img/svg-my-version/nerds-logo.svg" width="160" height="65" alt="Нёрдс">
       </a>
       <ul>
         <li>
@@ -44,7 +44,7 @@
         <li>по типу</li>
         <li>по названию</li>
       </ul>
-      <form method="get" action="index.html">
+      <form method="get">
         <fieldset>
           <legend>Сетка:</legend>
           <ul>
@@ -62,8 +62,6 @@
             </li>
           </ul>
         </fieldset>
-      </form>
-      <form method="get" action="index.html">
         <fieldset>
           <legend>Особенности</legend>
           <ul>
@@ -150,19 +148,21 @@
         </address>
         <p>Напишите нам</p>
         <form action="index.html" method="post">
-          <p>
-            <label for="appointment-name">Ваше имя:</label>
-            <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label for="appointment-email">Ваш e-mail:</label>
-            <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="appointment-text">Текст письма:</label>
-            <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
-          </p>
-          <button type="submit">Отправить</button>
+          <ul>
+            <li>
+              <label for="appointment-name">Ваше имя:</label>
+              <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+            </li>
+            <li>
+              <label for="appointment-email">Ваш e-mail:</label>
+              <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
+            </li>
+            <li>
+              <label for="appointment-text">Текст письма:</label>
+              <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
+            </li>
+          </ul>
+         <button type="submit">Отправить</button>
         </form>
       </section>
       <div>
