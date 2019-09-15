@@ -32,24 +32,25 @@
   <main>
     <h1> Магазин готовых шаблонов </h1>
     <section>
-      <span>Стоимость:</span>
-        <p><input type="range"></p>
+      <legen>Стоимость:</legen>
+        <div>
+           div   
+           div
+       </div>
         <form action="GET">
-              <label for="appointment-from">От:</label>
-              <input id="appointment-from" type="number" name="from" value="" placeholder="0">
-              <label for="appointment-before">До:</label>
-              <input id="appointment-before" type="number" name="before" value="" placeholder="15000">
-        </form>
-      <span>Сортировать:</span>
-        <p>
-          <button>по цене</button>
-          <button>по типу</button>
-          <button>по названию</button>
-          <button></button>
-          <button></button>
-        </p>
-      <form method="GET">
-        <fieldset>
+          <fieldset>
+            <ul>
+              <li>
+                <label for="appointment-from">От:</label>
+                <input id="appointment-from" type="number" name="from" value="" placeholder="0">
+              </li>
+              <li>
+                <label for="appointment-before">До:</label>
+                <input id="appointment-before" type="number" name="before" value="" placeholder="15000"> 
+              </li>
+            </ul>  
+          </fieldset>
+          <fieldset>
           <legend>Сетка:</legend>
           <ul>
             <li>
@@ -93,6 +94,14 @@
         </fieldset>
        <button type="submit">Показать</button>
       </form>
+      <section>
+        <legen>Сортировать:</legen>
+          <button aria-label="по цене">по цене</button>
+          <button aria-label="по типу">по типу</button>
+          <button aria-label="по названию">по названию</button>
+          <button aria-label="по убыванию"> </button>
+          <button aria-label="по возрастанию"> </button>
+        </section>
       <h2> список шаблонов </h2>
       <ul>
         <li>
