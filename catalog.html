@@ -32,19 +32,23 @@
   <main>
     <h1> Магазин готовых шаблонов </h1>
     <section>
-      <p>
-        <span>Стоимость</span>
-      </p>
-      <p>от 0 до 15000</p>
-      <p>
-        <span>Сортировать</span>
-      </p>
-      <ul>
-        <li>по цене</li>
-        <li>по типу</li>
-        <li>по названию</li>
-      </ul>
-      <form method="get">
+      <span>Стоимость:</span>
+        <p><input type="range"></p>
+        <form action="GET">
+              <label for="appointment-from">От:</label>
+              <input id="appointment-from" type="number" name="from" value="" placeholder="0">
+              <label for="appointment-before">До:</label>
+              <input id="appointment-before" type="number" name="before" value="" placeholder="15000">
+        </form>
+      <span>Сортировать:</span>
+        <p>
+          <button>по цене</button>
+          <button>по типу</button>
+          <button>по названию</button>
+          <button></button>
+          <button></button>
+        </p>
+      <form method="GET">
         <fieldset>
           <legend>Сетка:</legend>
           <ul>
@@ -139,7 +143,7 @@
     </section>
     <footer>
       <a href="map.html">Карта </a>
-      <img src="img/2.png" alt="map">
+      <img src="img/2.png" alt="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">
       <section>
         <h4>NЁRDS DESING STUDIO</h4>
         <address>
@@ -147,7 +151,7 @@
           Телефон: <a href="tel:+7812275-75-75">+7 (812) 275-75-75</a>
         </address>
         <p>Напишите нам</p>
-        <form action="index.html" method="post">
+        <form method="post">
           <ul>
             <li>
               <label for="appointment-name">Ваше имя:</label>
