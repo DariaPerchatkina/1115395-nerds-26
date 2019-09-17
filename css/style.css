@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color:#000000;
+  text-transform: uppercase;
+
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+/*
+ не понимаю как быть с кнопкой "отправить"
+.appointment__button {
+  font: inherit;
+
+  text-align: center;
+  color:#ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+.appointment__button:hover,
+.appointment__button: focus,
+.appointment__button: active {
+  background-color: #e74246
+  }
+
+*/
+
+main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+
+  background-color: #eeeeee;  
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+  }
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #fb565a;
+}
+
+.projects__list {
+  list-style: none;
+}
+
+.project__list-item {
+  text-align: center;
+}
+
+.project__list-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.appointment-item input {
+  font: inherit;
+
+  background-color: #eeeeee;
+  border: 2px solid #d7dcde;
+}
+
+.appointment-item input:focus {
+  border-color: #b4b9bb; 
+}
+
+.main-footer {
+  color: #000000;
+}
+
+.footer-contacts a{
+  color: #e1e1e1;
+  text-decoration: underline;
+  }
+
+.footer-contacts a:hover, 
+.footer-contacts a:focus{
+    text-decoration: none;
+}
+
+.footer-social {
+    text-align: center;
+}
+  
+  .footer-social ul {
+    list-style: none;
+}
+  
+  .social-button {
+  color: #000000;
+}
