@@ -61,11 +61,11 @@ main-navigation {
   list-style: none;
 }
 
-.projects-list__item {
+.projects__item {
   text-align: center;
 }
 
-.projects-list__item h3 {
+.projects__item h3 {
   font-size: 24px;
   line-height: 30px;
 }
