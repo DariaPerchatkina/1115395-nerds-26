@@ -15,8 +15,7 @@ body {
 a {
   text-decoration: none;
 }
-/*
- не понимаю как быть с кнопкой "отправить"*/
+
 .appointment__button {
   font: inherit;
 
@@ -29,8 +28,8 @@ a {
   border: none;
 }
 .appointment__button:hover,
-.appointment__button: focus,
-.appointment__button: active {
+.appointment__button:focus,
+.appointment__button:active {
   background-color: #e74246
   }
 
@@ -99,11 +98,11 @@ main-navigation {
     text-align: center;
 }
 
-  .footer-social ul {
+.footer-social ul {
     list-style: none;
 }
 
-  .social-button {
+.social-button {
   color: #000000;
 }
 

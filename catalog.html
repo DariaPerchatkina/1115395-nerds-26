@@ -10,8 +10,8 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__img" src="img/svg-my-version/nerds-logo.svg" width="160" height="65" alt="Нёрдс">
+      <a class="main-navigation__logo" href="index.html">
+        <img class="main-navigation__img" src="img/svg-my-version/nerds-logo.svg" width="160" height="65" alt="Нёрдс">
       </a>
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
@@ -57,34 +57,34 @@
             <label for="filter-adaptive">Адаптивная</label>
           </li>
           <li>
-            <input class="page-catalog__input_radio" type="radio" name="grid" value="fixed" id="filter-fixed">
+            <input class="page-catalog__input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
             <label for="filter-fixed">Фиксированная</label>
           </li>
           <li>
-            <input class="page-catalog__input_radio" type="radio" name="grid" value="rubber" id="filter-rubber">
+            <input class="page-catalog__input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
             <label for="filter-rubber">Резиновая</label>
           </li>
         </ul>
         <legend>Особенности</legend>
         <ul>
           <li>
-            <input class="page-catalog__input_checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+            <input class="page-catalog__input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
             <label for="filter-slider">Слайдер</label>
           </li>
           <li>
-            <input class="page-catalog__input_checkbox" type="checkbox" name="benifits-block" id="filter-benefits-block">
+            <input class="page-catalog__input-checkbox" type="checkbox" name="benifits-block" id="filter-benefits-block">
             <label for="filter-benefits-block">Блок преимуществ</label>
           </li>
           <li>
-            <input class="page-catalog__input_checkbox" type="checkbox" name="news" id="filter-news" checked>
+            <input class="page-catalog__input-checkbox" type="checkbox" name="news" id="filter-news" checked>
             <label for="filter-news">Новости</label>
           </li>
           <li>
-            <input class="page-catalog__input_checkbox" type="checkbox" name="gallery" id="filter-gallery">
+            <input class="page-catalog__input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
             <label for="filter-gallery">Галерея</label>
           </li>
           <li>
-            <input class="page-catalog__input_checkbox" type="checkbox" name="basket" id="filter-basket">
+            <input class="page-catalog__input-checkbox" type="checkbox" name="basket" id="filter-basket">
             <label for="filter-basket">Корзина</label>
           </li>
         </ul>
@@ -92,10 +92,10 @@
         <button class="page-catalog__filter-button">по цене</button>
         <button class="page-catalog__filter-button">по типу</button>
         <button class="page-catalog__filter-button">по названию</button>
-        <button aria-label="по убыванию"> </button>
-        <button aria-label="по возрастанию"> </button>
+        <button class="page-catalog__filter-button" aria-label="по убыванию"> </button>
+        <button class="page-catalog__filter-button" aria-label="по возрастанию"> </button>
       </fieldset>
-      <button class="filter-button__button" type="submit">Показать</button>
+      <button class="page-catalog__button" type="submit">Показать</button>
     </form>
     <h2> список шаблонов </h2>
     <section class="page-catalog">
@@ -131,17 +131,17 @@
           </a>
         </li>
       </ul>
-      <ul class="pagination__list">
-        <li class="pagination__item  pagination__item--current">
+      <ul class="pagination-list">
+        <li class="pagination-list__item  pagination-list__item--current">
           <a>1</a>
         </li>
-        <li class="pagination__item">
+        <li class="pagination-list__item">
           <a href="#">2</a>
         </li>
-        <li class="pagination__item">
+        <li class="pagination-list__item">
           <a href="#">3</a>
         </li>
-        <li class="pagination__item">
+        <li class="pagination-list__item">
           <a href="#">следующая</a>
         </li>
       </ul>
@@ -150,14 +150,14 @@
       <a class="main-footer__link" href="map.html">Карта </a>
       <img src="img/2.png" alt="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">
       <section>
-        <h4>NЁRDS DESING STUDIO</h4>
+        <h3>NЁRDS DESING STUDIO</h3>
         <address class="footer-contacts">
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           Телефон: <a href="tel:+7812275-75-75">+7 (812) 275-75-75</a>
         </address>
         <p>Напишите нам</p>
-        <form class="appointment__form" method="post">
-          <ul class="appointment__list">
+        <form class="appointment-form" method="post">
+          <ul class="appointment-form__list">
             <li>
               <label for="appointment-name">Ваше имя:</label>
               <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
@@ -171,15 +171,21 @@
               <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
             </li>
           </ul>
-          <button  class="appointment__button" type="submit">Отправить</button>
+          <button  class="appointment-form__button" type="submit">Отправить</button>
         </form>
       </section>
       <div class="footer-social">
         <p>Давайте дружить, это выгодно!</p>
-        <article>Скидка 10% для друзей из социальных сетей.</article>
-        <a class="social-button" href="#">ВКонтакте</a>
-        <a class="social-button" href="#">Facebook</a>
-        <a class="social-button" href="#">Instagram</a>
+        <span>Скидка 10% для друзей из социальных сетей.</span>
+        <a class="social-button" href="#">
+            <img src="img/svg-my-version/vk-icon.svg"  width="26" height="15" alt="Нёрдс во ВКонтакте">ВКонтакте
+          </a>
+        <a class="social-button" href="#">
+            <img src="img/svg-my-version/fb-icon.svg" width="12" height="22" alt="Нёрдс в Facebook">Facebook
+          </a>
+        <a class="social-button" href="#">
+            <img src="img/svg-my-version/insta-icon.svg" width="21" height="21" alt="Нёрдс в Instagram">Instagram
+          </a>
       </div>
     </footer>
   </main>
