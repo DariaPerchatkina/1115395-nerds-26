@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 /*
- не понимаю как быть с кнопкой "отправить"
+ не понимаю как быть с кнопкой "отправить"*/
 .appointment__button {
   font: inherit;
 
@@ -34,38 +34,38 @@ a {
   background-color: #e74246
   }
 
-*/
+
 
 main-navigation {
   font-size: 16px;
   line-height: 30px;
   color: #000000;
 
-  background-color: #eeeeee;  
+  background-color: #eeeeee;
 }
 
-.site-navigation {
+.main-navigation__list {
   list-style: none;
 }
 
-.site-navigation a {
+.main-navigation__link {
   color: #000000;
   }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.main-navigation__link:hover,
+.main-navigation__link:focus {
   color: #fb565a;
 }
 
-.projects__list {
+.projects__list{
   list-style: none;
 }
 
-.project__list-item {
+.projects-list__item {
   text-align: center;
 }
 
-.project__list-item h3 {
+.projects-list__item h3 {
   font-size: 24px;
   line-height: 30px;
 }
@@ -78,7 +78,7 @@ main-navigation {
 }
 
 .appointment-item input:focus {
-  border-color: #b4b9bb; 
+  border-color: #b4b9bb;
 }
 
 .main-footer {
@@ -90,7 +90,7 @@ main-navigation {
   text-decoration: underline;
   }
 
-.footer-contacts a:hover, 
+.footer-contacts a:hover,
 .footer-contacts a:focus{
     text-decoration: none;
 }
@@ -98,11 +98,15 @@ main-navigation {
 .footer-social {
     text-align: center;
 }
-  
+
   .footer-social ul {
     list-style: none;
 }
-  
+
   .social-button {
   color: #000000;
+}
+
+.main-footer__link {
+  text-decoration: none;
 }

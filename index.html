@@ -10,29 +10,29 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/svg-my-version/nerds-logo.svg" width="160" height="65" alt="Логотип студии "Нёрдс"">
+      <a class="main-header__logo">
+        <img class="main-header__img" src="img/svg-my-version/nerds-logo.svg" width="160" height="65" alt="Логотип студии "Нёрдс"">
       </a>
-      <ul class="site-navigation">
-        <li>
-          <a href="stidio.html">Студия</a>
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="stidio.html">Студия</a>
         </li>
-        <li>
-          <a href="customers.html">Клиенты</a>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="customers.html">Клиенты</a>
         </li>
-        <li>
-          <a href="catalog.html"> Магазин </a>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="catalog.html"> Магазин </a>
         </li>
-        <li>
-          <a href="contacts.html"> Контакты </a>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="contacts.html"> Контакты </a>
         </li>
-        <li>
-          <a href="basket.html"> Корзина </a>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="basket.html"> Корзина </a>
         </li>
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="page-index">
     <h2>Долго, дорого, скрупулезно</h2>
     <img src="img/slide-picture.png" alt="slide1">
     <section>
@@ -41,20 +41,20 @@
     </section>
     <section class="projects">
       <ul class="projects__list">
-        <li class="project__list__item">
+        <li class="projects__item">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="#">Заказать</a>
+          <a class="projects__link" href="#">Заказать</a>
         </li>
-        <li class="project__list__item">
+        <li class="projects__item">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-          <a href="#">Заказать</a>
+          <a class="projects__link" href="#">Заказать</a>
         </li>
-        <li class="project__list__item">
+        <li class="projects__item">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a href="#">Заказать</a>
+          <a class="projects__link" href="#">Заказать</a>
         </li>
       </ul>
     </section>
@@ -109,7 +109,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <a href="map.html"> </a>
+      <a class="main-footer__link" href="map.html"> </a>
       <img src="img/2.png" alt="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">
       <div class="index-columns">
       <section class="contacts">
@@ -143,9 +143,16 @@
       <div class="footer-social">
         <p>Давайте дружить, это выгодно!</p>
         <article>Скидка 10% для друзей из социальных сетей.</article>
-        <a class="social-button" href="#">ВКонтакте</a>
-        <a class="social-button" href="#">Facebook</a>
-        <a class="social-button" href="#">Instagram</a>
+        <a class="social-button" href="#">
+          <img src="img/svg-my-version/vk-icon.svg"  width="26" height="15" alt="Нёрдс во ВКонтакте">
+          ВКонтакте
+        </a>
+        <a class="social-button" href="#">
+          <img src="img/svg-my-version/fb-icon.svg" width="12" height="22" alt="Нёрдс в Facebook">Facebook
+        </a>
+        <a class="social-button" href="#">
+          <img src="img/svg-my-version/insta-icon.svg" width="21" height="21" alt="Нёрдс в Instagram">Instagram
+        </a>
       </div>
     </footer>
   </body>
