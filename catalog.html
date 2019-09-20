@@ -7,32 +7,38 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="inner_page">
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-navigation__logo" href="index.html">
-        <img class="main-navigation__img" src="img/svg-my-version/nerds-logo.svg" width="160" height="65" alt="Нёрдс">
-      </a>
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="stidio.html">Студия</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="customers.html">Клиенты</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="catalog.html"> Магазин </a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="contacts.html"> Контакты </a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="basket.html"> Корзина </a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="main-navigation">
+          <a class="main-navigation__logo" href="index.html">
+            <img class="main-header__img" src="img/svg-my-version/nerds-logo.svg" width="160" height="65" alt="Логотип студии "Нёрдс"">
+          </a>
+          <div class="main-navigation-wrapper">
+              <div class="container">
+              <ul class="site-navigation__list">
+                <li class="site-navigation__item">
+                  <a class="site-navigation__link" href="stidio.html">Студия</a>
+                </li>
+                <li class="site-navigation__item">
+                  <a class="site-navigation__link" href="customers.html">Клиенты</a>
+                </li>
+                <li class="site-navigation__item">
+                  <a class="site-navigation__link" href="catalog.html"> Магазин </a>
+                </li>
+                <li class="site-navigation__item">
+                  <a class="site-navigation__link" href="contacts.html"> Контакты </a>
+                </li>
+             </ul>
+              <ul class="user-navigation__list">
+                <li class="user-navigation__item">
+                  <a class="user-navigation__link" href="basket.html"> Корзина </a>
+                </li>
+              </ul>
+             </div>
+            </div>
+        </nav>
   </header>
-  <main class="page-catalog">
+   <main class="page-catalog">
     <h1 class="page-catalog__title"> Магазин готовых шаблонов </h1>
     <form class="page-catalog__filter" action="GET">
       <fieldset>
@@ -101,34 +107,46 @@
     <section class="page-catalog">
       <ul class="page-catalog__list">
         <li class="page-catalog__item">
+          <figure class="page-catalog__content">
           <a href="#">
             <img src="img/img-sedona-jpg.jpg" alt="Седона">
           </a>
+        </figure>
         </li>
         <li class="page-catalog__item">
+          <figure class="page-catalog__content">
           <a href="#">
             <img src="img/img-pink-jpg.jpg" alt="Пинк">
           </a>
+         </figure>
         </li>
         <li class="page-catalog__item">
+          <figure class="page-catalog__content">
           <a href="#">
             <img src="img/img-barbershop-jpg.jpg" alt="Бородинский">
           </a>
+          </figure>
         </li>
         <li class="page-catalog__item">
+          <figure class="page-catalog__content">
           <a href="#">
             <img src="img/img-mishka-jpg.jpg" alt="Мишка">
           </a>
+          </figure>
         </li>
         <li class="page-catalog__item">
+          <figure class="page-catalog__content">
           <a href="#">
             <img src="img/img-aplus-jpg.jpg" alt="А+">
           </a>
+          </figure>
         </li>
         <li class="page-catalog__item">
+          <figure class="page-catalog__content">
           <a href="#">
             <img src="img/img-kvast-jpg.jpg" alt="Кваст">
           </a>
+          </figure>
         </li>
       </ul>
       <ul class="pagination-list">

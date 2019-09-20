@@ -36,23 +36,27 @@ a {
 
 
 main-navigation {
-  font-size: 16px;
   line-height: 30px;
   color: #000000;
-
   background-color: #eeeeee;
+  display: flex;
+  
 }
 
-.main-navigation__list {
-  list-style: none;
+.site-navigation__list,
+.user-navigation__list {
+list-style: none;
 }
 
-.main-navigation__link {
+.site-navigation__link,
+.user-navigation__link {
   color: #000000;
   }
 
-.main-navigation__link:hover,
-.main-navigation__link:focus {
+.site-navigation__link:hover,
+.site-navigation__link:focus,
+.user-navigation__link:hover,
+.user-navigation__link:focus {
   color: #fb565a;
 }
 
@@ -91,15 +95,15 @@ main-navigation {
 
 .footer-contacts a:hover,
 .footer-contacts a:focus{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .footer-social {
-    text-align: center;
+  text-align: center;
 }
 
 .footer-social ul {
-    list-style: none;
+  list-style: none;
 }
 
 .social-button {
@@ -109,3 +113,114 @@ main-navigation {
 .main-footer__link {
   text-decoration: none;
 }
+
+/* ----- Сеточные стили ----- */
+
+
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
+.main-header {
+  margin-bottom: 0px;
+
+  /* Временно для сетки */
+  min-height: 355px;
+}
+
+.main-navigation {
+  /* Временно для сетки */
+  width: 1440px;
+  min-height: 132px;
+  background-color: #eeeeee;
+  display: flex;
+ 
+  
+}
+
+.main-navigation__logo {
+  width: 160px;
+  height: 65px;
+  padding-top: 49px;
+  padding-left: 140px;
+
+}
+
+.main-navigation__list {
+  order: 1;
+}
+
+
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-left: 202px;
+ 
+}
+
+.container {
+  width: 663px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects__list {
+  display: flex;
+  justify-content: space-between;
+  height: 507px;
+  margin-left: 140px;
+  margin-bottom: 80px;
+  padding: 0;
+
+  list-style: none;
+  }
+
+.projects__item {
+  width: 300px;
+  min-height: 100px;
+  }
+
+.main-footer{
+  padding-top: 69px;
+  padding-right: 356px;
+  padding-bottom: 76px;
+  padding-left: 140px;
+    
+  min-height: 217px;
+  }
+
+.main-footer .container{
+  display: flex;
+}
+
+.footer-social {
+  width: 944px;
+  margin: 0;
+ 
+  text-align: ;
+  }
+.footer-social-wrapper {
+  width: 100%; 
+}
+
+.inner_page .main-navigation{
+  align-items: flex-start;
+  flex-direction: row;
+
+  min-height: 355px;
+}
+
+.page-catalog__title {
+  margin:0;
+  margin-bottom: 196px;
+
+  min-heigth: 43px;
+}
+ 
