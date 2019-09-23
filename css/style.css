@@ -109,3 +109,10 @@ main-navigation {
 .main-footer__link {
   text-decoration: none;
 }
+
+.pagination-list {
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+
+}
