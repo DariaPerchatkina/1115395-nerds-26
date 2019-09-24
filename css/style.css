@@ -33,14 +33,15 @@ a {
   background-color: #e74246
   }
 
-
-
 main-navigation {
   font-size: 16px;
   line-height: 30px;
   color: #000000;
 
   background-color: #eeeeee;
+  font-weight: 500;
+  line-height: 1.88;
+  text-align: left;
 }
 
 .main-navigation__list {
@@ -56,6 +57,11 @@ main-navigation {
   color: #fb565a;
 }
 
+.main-navigation__logo{
+  width: 160px;
+  height: 65px;
+}
+
 .projects__list{
   list-style: none;
 }
@@ -64,7 +70,7 @@ main-navigation {
   text-align: center;
 }
 
-.projects__item h3 {
+.projects__item h1 {
   font-size: 24px;
   line-height: 30px;
 }
@@ -117,7 +123,61 @@ main-navigation {
 
 }
 
-.page-catalog {
+.page-catalog__title{
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
 
 
+}
+.page-catalog__list {
+  list-style: none;
+}
+
+.results__list{
+  list-style: none;
+}
+
+/* .results__item{
+  color: #000000;
+} */
+
+
+.results__item{
+  opacity: 0.2;
+}
+
+.results__item:focus,
+.results__item:hover  {
+  opacity: 1;
+}
+
+.results__item:active{
+  opacity: 0.1;
+}
+
+.directions__list{
+  list-style: none;
+}
+
+.directions__item{
+  text-align: center;
+}
+
+.directions h3{
+  text-align: center;
+}
+
+.advanteges__list{
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
 }

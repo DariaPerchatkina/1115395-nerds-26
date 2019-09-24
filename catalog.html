@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Нёрдс-каталог</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -43,29 +43,35 @@
         </div>
         <ul class="page-catalog__list">
           <li class="page-catalog__item">
-            <input  class="page-catalog__input" id="filter-from" type="number" name="from" value="" placeholder="0">
-            <label for="filter-from">От:</label>
+            <label for="filter-from" >От:
+              <input  class="page-catalog__input" id="filter-from" type="number" name="from" value="" placeholder="0">
+            </label>
           </li>
           <li class="page-catalog__item">
-           <input class="page-catalog__input" id="filter-before" type="number" name="before" value="" placeholder="15000">
-           <label for="filter-before">До:</label>
-         </li>
+            <label for="filter-before">До:
+              <input class="page-catalog__input" id="filter-before" type="number" name="before" value="" placeholder="15000">
+            </label>
+          </li>
        </ul>
+     </fieldset>
+     <fieldset>
         <legend>Сетка:</legend>
         <ul class="page-catalog__list">
           <li class="page-catalog__item">
             <input class="page-catalog__input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
             <label for="filter-adaptive">Адаптивная</label>
           </li>
-          <li>
+          <li class="page-catalog__item">
             <input class="page-catalog__input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
             <label for="filter-fixed">Фиксированная</label>
           </li>
-          <li>
+          <li class="page-catalog__item">
             <input class="page-catalog__input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
             <label for="filter-rubber">Резиновая</label>
           </li>
         </ul>
+      </fieldset>
+      <fieldset>
         <legend>Особенности</legend>
         <ul class="page-catalog__list">
           <li class="page-catalog__item">
@@ -89,15 +95,29 @@
             <label for="filter-basket">Корзина</label>
           </li>
         </ul>
-        <legend>Сортировать:</legend>
-        <button class="page-catalog__filter-button">по цене</button>
-        <button class="page-catalog__filter-button">по типу</button>
-        <button class="page-catalog__filter-button">по названию</button>
-        <button class="page-catalog__filter-button" aria-label="по убыванию"> </button>
-        <button class="page-catalog__filter-button" aria-label="по возрастанию"> </button>
       </fieldset>
       <button class="page-catalog__button" type="submit">Показать</button>
-    </form>
+      </form>
+      <h2>Сортировать:</h2>
+        <section class="page-catalog__filter">
+          <ul class="page-catalog__list">
+             <li class="page-catalog__item">
+               <button class="page-catalog__filter-button">по цене</button>
+             </li>
+             <li class="page-catalog__item">
+               <button class="page-catalog__filter-button">по типу</button>
+             </li>
+             <li class="page-catalog__item">
+               <button class="page-catalog__filter-button">по названию</button>
+             </li>
+            <li class="page-catalog__item">
+               <button class="page-catalog__filter-button" aria-label="по убыванию"> </button>
+            </li>
+            <li class="page-catalog__item">
+               <button class="page-catalog__filter-button" aria-label="по возрастанию"> </button>
+            </li>
+          </ul>
+       </section>
     <h2> список шаблонов </h2>
     <section class="page-catalog">
       <ul class="page-catalog__list">
@@ -148,8 +168,10 @@
       </ul>
     </section>
     <footer class="main-footer">
-      <a class="main-footer__link" href="map.html">Карта </a>
-      <img src="img/2.png" alt="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">
+      <a class="main-footer__link" href="map.html">
+        <span class="visually-hidden"> Карта </span>
+        <img src="img/2.png" alt="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">
+      </a>
       <section>
         <h3>NЁRDS DESING STUDIO</h3>
         <address class="footer-contacts">
