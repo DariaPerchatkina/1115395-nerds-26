@@ -10,36 +10,43 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
+     <div class="main-navigation__wrapper">
       <a class="main-navigation__logo">
         <img class="main-header__img" src="img/svg-my-version/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
       </a>
       <h1 class="visually-hidden">Нёрдс</h1>
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="stidio.html">Студия</a>
+      <div class="container">
+       <ul class="site-navigation__list">
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="stidio.html">Студия</a>
         </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="customers.html">Клиенты</a>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="customers.html">Клиенты</a>
         </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="catalog.html"> Магазин </a>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="catalog.html"> Магазин </a>
         </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="contacts.html"> Контакты </a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="basket.html"> Корзина </a>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="contacts.html"> Контакты </a>
         </li>
       </ul>
+      <ul class="user-navigation__list">
+        <li class="user-navigation__item">
+          <a class="user-navigation__link" href="basket.html"> Корзина </a>
+        </li>
+      </ul>
+    </div>
+    </div>
     </nav>
-  </header>
-  <main class="page-index">
+  <div class="page-index">
     <h2>Долго, дорого, скрупулезно</h2>
     <img src="img/slide-picture.png" alt="slide1">
     <section>
       <p class="page-index__tagline">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
       <button class="page-index__button" type="button">Узнай больше</button>
     </section>
+  </header>
+  <main class="container">
     <section class="projects">
       <ul class="projects__list">
         <li class="projects__item">
@@ -62,6 +69,7 @@
         </li>
       </ul>
     </section>
+    <div class="index-columns">
     <section class="directions">
       <h2 class="directions__tagline">Мы-маленькая, но гордая дизайн-студия из Краснодара.</h2>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -90,6 +98,8 @@
         </li>
       </ul>
     </section>
+  </div>
+  <div class="index-columns">
     <section class="results">
       <ul class="results__list">
          <li class="results__item">
@@ -114,12 +124,8 @@
           </li>
         </ul>
       </section>
+    </div>
     </main>
-    <footer class="main-footer">
-      <a class="main-footer__link" href="map.html">
-        <span class="visually-hidden"> Карта </span>
-        <img src="img/2.png" alt="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">
-      </a>
       <div class="index-columns">
       <section class="contacts">
         <h3>NЁRDS DESING STUDIO</h3>
@@ -148,7 +154,15 @@
         </form>
       </section>
       </section>
+      <section>
+          <a class="main-footer__link" href="map.html">
+            <span class="visually-hidden"> Карта </span>
+            <img src="img/2.png" alt="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">
+          </a>
+      </section>
     </div>
+    <footer class="main-footer">
+      <div class="container">
       <div class="footer-social">
         <ul class="footer-social__list">
           <li class="footer-social__item">
@@ -167,8 +181,11 @@
             </svg>
           </li>
       </ul>
+    </div>
+    <div class="footer-sentence">
       <p>Давайте дружить, это выгодно!</p>
       <span>Скидка 10% для друзей из социальных сетей.</span>
+    </div>
     </div>
     </footer>
   </body>

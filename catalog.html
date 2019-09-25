@@ -9,28 +9,35 @@
 </head>
 <body>
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-navigation__logo" href="index.html">
-        <img class="main-navigation__img" src="img/svg-my-version/nerds-logo.svg" width="160" height="65" alt="Нёрдс">
-      </a>
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="stidio.html">Студия</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="customers.html">Клиенты</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="catalog.html"> Магазин </a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="contacts.html"> Контакты </a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="basket.html"> Корзина </a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="main-navigation">
+          <div class="main-navigation__wrapper">
+           <a class="main-navigation__logo" href="index.html">
+             <img class="main-header__img" src="img/svg-my-version/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
+           </a>
+           <h1 class="visually-hidden">Нёрдс</h1>
+           <div class="container">
+            <ul class="site-navigation__list">
+             <li class="site-navigation__item">
+               <a class="site-navigation__link" href="stidio.html">Студия</a>
+             </li>
+             <li class="site-navigation__item">
+               <a class="site-navigation__link" href="customers.html">Клиенты</a>
+             </li>
+             <li class="site-navigation__item">
+               <a class="site-navigation__link" href="catalog.html"> Магазин </a>
+             </li>
+             <li class="site-navigation__item">
+               <a class="site-navigation__link" href="contacts.html"> Контакты </a>
+             </li>
+           </ul>
+           <ul class="user-navigation__list">
+             <li class="user-navigation__item">
+               <a class="user-navigation__link" href="basket.html"> Корзина </a>
+             </li>
+           </ul>
+         </div>
+         </div>
+         </nav>
   </header>
   <main class="page-catalog">
     <h1 class="page-catalog__title"> Магазин готовых шаблонов </h1>
@@ -167,36 +174,44 @@
         </li>
       </ul>
     </section>
-    <footer class="main-footer">
-      <a class="main-footer__link" href="map.html">
-        <span class="visually-hidden"> Карта </span>
-        <img src="img/2.png" alt="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">
-      </a>
-      <section>
-        <h3>NЁRDS DESING STUDIO</h3>
-        <address class="footer-contacts">
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          Телефон: <a href="tel:+7812275-75-75">+7 (812) 275-75-75</a>
-        </address>
-        <p>Напишите нам</p>
-        <form class="appointment-form" method="post">
-          <ul class="appointment-form__list">
-            <li class="appointment-form__item">
-              <label for="appointment-name">Ваше имя:</label>
-              <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-            </li>
-            <li class="appointment-form__item">
-              <label for="appointment-email">Ваш e-mail:</label>
-              <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
-            </li>
-            <li class="appointment-form__item">
-              <label for="appointment-text">Текст письма:</label>
-              <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
-            </li>
-          </ul>
-          <button  class="appointment-form__button" type="submit">Отправить</button>
-        </form>
-      </section>
+    </main>
+    <div class="index-columns">
+        <section class="contacts">
+          <h3>NЁRDS DESING STUDIO</h3>
+          <address>
+            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+            Телефон: <a href="tel:+7812275-75-75">+7 (812) 275-75-75</a>
+          </address>
+          <section class="appointment">
+          <p>Напишите нам</p>
+          <form class="appointment-form" method="post">
+            <ul class="appointment-form__list">
+              <li class="appointment-form__item">
+                <label for="appointment-name">Ваше имя:</label>
+                <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+              </li>
+              <li class="appointment-form__item">
+                <label for="appointment-email">Ваш e-mail:</label>
+                <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
+              </li>
+              <li class="appointment-form__item">
+                <label for="appointment-text">Текст письма:</label>
+                <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
+              </li>
+            </ul>
+            <button class="appointment-form__button" type="button">Отправить</button>
+          </form>
+        </section>
+        </section>
+        <section>
+            <a class="main-footer__link" href="map.html">
+              <span class="visually-hidden"> Карта </span>
+              <img src="img/2.png" alt="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">
+            </a>
+        </section>
+      </div>
+      <footer class="main-footer">
+        <div class="container">
         <div class="footer-social">
           <ul class="footer-social__list">
             <li class="footer-social__item">
@@ -212,13 +227,15 @@
             <li class="footer-social__item">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
                   <path fill="#fff" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18zm0-11h-4V3h4z" aria-label="Нёрдс в Instagram"/>
-                </svg>
-              </li>
-          </ul>
-          <p>Давайте дружить, это выгодно!</p>
-          <span>Скидка 10% для друзей из социальных сетей.</span>
-        </div>
+              </svg>
+            </li>
+        </ul>
+      </div>
+      <div class="footer-sentence">
+        <p>Давайте дружить, это выгодно!</p>
+        <span>Скидка 10% для друзей из социальных сетей.</span>
+      </div>
+      </div>
       </footer>
-    </main>
   </body>
 </html>
