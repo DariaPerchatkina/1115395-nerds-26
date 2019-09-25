@@ -106,6 +106,10 @@ a {
 .appointment-form__list{
   list-style: none;
 }
+
+
+
+
 .appointment-form__item input {
   font: inherit;
   background-color: #eeeeee;
@@ -249,10 +253,28 @@ a {
 .page-catalog__item {
   font-size: 14px;
   font-weight: normal;
-    }
+  }
 
 .page-sorting h2 {
-    font-size: 1
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+.page-sorting__list {
+  list-style: none;
+
+}
+
+.page-sorting__item {
+  font-size: 14px;
+  font-weight: normal;
+  }
+
+.page-catalog__button {
+  font: inherit;
+  text-align: center;
+  color: #000000;
   vertical-align: middle;
   text-transform: uppercase;
 
@@ -336,7 +358,8 @@ a {
   width: 160px;
   height: 50px;
   background-color: #fb565a;
-  color:#ffffff;  text-transform: uppercase;
+  color:#ffffff;
+  text-transform: uppercase;
 }
 
 .projects__button--red:hover {
