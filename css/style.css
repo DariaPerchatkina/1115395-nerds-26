@@ -15,6 +15,21 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+}
+
 .appointment-form__button {
   font: inherit;
 
@@ -92,6 +107,15 @@ a {
   line-height: 30px;
 }
 
+.projects__img--red {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("img/advantage-picture-red.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
 .directions__tagline {
   font-size: 45px;
   font-weight: 500;
@@ -107,17 +131,16 @@ a {
   list-style: none;
 }
 
-
-
-
 .appointment-form__item input {
+  width: 360px;
+  height: 50px;
+
   font: inherit;
+  color: rgba(68, 68, 68, 0.5);
+
   background-color: #eeeeee;
   border: solid 2px #d7dcde;
-  width: 360px;
- height: 50px;
   opacity: 0.5;
-  color: rgba(68, 68, 68, 0.5);
 }
 
 .appointment-form__item input:focus,
@@ -185,9 +208,11 @@ a {
 .footer-social__item {
   width: 79px;
   height: 79px;
-  border-radius: 50%;
-  background-color: #e1e1e1;
+  
   text-align: center;
+
+  background-color: #e1e1e1;
+  border-radius: 50%;
 }
 
 .footer-social__item:hover {
@@ -213,10 +238,7 @@ a {
 .page-index h2 {
   font-size: 55px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1;
-  letter-spacing: normal;
   text-align: left;
   color: #000000;
 }
@@ -272,7 +294,11 @@ a {
   }
 
 .page-catalog__button {
+  width: 240px;
+  height: 50px;
+
   font: inherit;
+  font-style: normal;
   text-align: center;
   color: #000000;
   vertical-align: middle;
@@ -281,9 +307,6 @@ a {
   background-color: #eeeeee;
   border: none;
 
-  width: 240px;
-  height: 50px;
-  font-style: normal;
 }
 
 .page-catalog__button:hover {
@@ -441,46 +464,27 @@ a {
   text-align: center;
 }
 
-.advanteges {
+.advantages {
   text-align: center;
 }
 
-.advanteges__list {
+.advantages__list {
   list-style: none;
 }
 
-.advanteges__item {
+.advantages  __item {
   text-align: center;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  border: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-}
-
 .directions__tagline h2 {
-font: inherit;
-font-size: 45px;
-font-weight: 500;
-font-style: normal;
-font-stretch: normal;
-line-height: 1;
-letter-spacing: normal;
-text-align: left;
-color: #000000;
+  font: inherit;
+  font-size: 45px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
 }
 
-.text-style-1 {
-font-weight: bold;
-color: #000000;
-}
