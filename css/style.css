@@ -89,10 +89,23 @@ input[type="radio"].visually-hidden {
   list-style: none;
   display: flex;
   max-width: 115px;
-  padding-left: 60px; 
+   
 }
 
-.site-navigation__link,
+.site-navigation__link {
+  display: block;
+  
+  text-transform: uppercase;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 34px;
+  padding-bottom: 16px;
+
+  vertical-align: middle;
+  
+  color: #000000;
+}
+
 .user-navigation__link {
   display: block;
   
@@ -105,6 +118,26 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
   
   color: #000000;
+}
+
+.user-navigation__list .user-navigation__link {
+  position: relative;
+  padding-left: 60px;
+}
+
+..user-navigation__link::before {
+  content: "";
+
+  position: absolute;
+  top: 33px;
+  left: 26px;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url(".../1115395-NERDS-26/img/basket-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .site-navigation__link:hover,
@@ -760,4 +793,13 @@ color: #000000;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.item__img {
+  width: 300px;
+  height: 146px;
+
+  background-image: url(".../1115395-NERDS-26/img/advantage-picture-red.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
