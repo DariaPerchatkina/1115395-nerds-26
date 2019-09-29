@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
+  font-family: "Roboto", "Arial", sans-serif;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
@@ -23,6 +23,21 @@ html {
 
 a {
   text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
 }
 
 .appointment-form__button {
@@ -99,13 +114,13 @@ background-color: #fb565a;
 .main-navigation__logo {
   width: 160px;
   height: 65px;
-  object-fit: contain;
 }
 
 .main-navigation__logo:hover,
 .main-navigation__logo:focus {
   opacity: 0.8;
 }
+
 .main-navigation__logo:active {
   opacity: 0.3;
 }
@@ -116,27 +131,38 @@ background-color: #fb565a;
 
 }
 .projects__list {
+  margin: 10px;
+
   list-style: none;
+  display: flex;
+
 }
 
 .projects__item {
-  text-align: center;
-  margin-bottom: 10px; /*временно тут */
+  width: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 100px;
+
+  /*margin-bottom: 10px; временно тут */
 }
 
 .projects__item h3 {
   font-size: 24px;
+
   line-height: 30px;
   text-transform: uppercase;
 }
 
+.item__block{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  }
+
 .directions__tagline {
   font-size: 45px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
-  letter-spacing: normal;
   text-align: left;
   color: #000000;
 }
@@ -146,13 +172,16 @@ background-color: #fb565a;
 }
 
 .appointment-form__item input {
-  font: inherit;
-  background-color: #eeeeee;
-  border: solid 2px #d7dcde;
   width: 360px;
   height: 50px;
-  opacity: 0.5;
+
+  font: inherit;
   color: rgba(68, 68, 68, 0.5);
+  opacity: 0.5;
+
+  background-color: #eeeeee;
+  border: solid 2px #d7dcde;
+
 }
 
 .appointment-form__item input:focus,
@@ -168,6 +197,7 @@ background-color: #fb565a;
 .appointment-form__button{
   width: 260px;
   height: 50px;
+
   background-color: #fb565a;
 }
 
@@ -177,6 +207,7 @@ background-color: #fb565a;
 
 .appointment-form__button:active{
   color: rgba(255, 255, 255, 0.3);
+
   background-color: #d7373b;
 }
 
@@ -186,6 +217,7 @@ background-color: #fb565a;
 
 .footer-contacts a {
   color: #e1e1e1;
+
   text-decoration: underline;
 }
 
@@ -235,7 +267,23 @@ background-color: #fb565a;
 
 .footer-social__link:active {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+.footer-social__item {
+  width: 79px;
+  height: 79px;
+
+  text-align: center;
+
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+
+.footer-social__item:hover {
+  background-color: #e74246;
+}
+
+.footer-social__item:active {
   background-color: #d7373b;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .main-footer__link {
@@ -243,6 +291,7 @@ background-color: #fb565a;
 }
 
 .pagination-list {
+  color: #000000;
   list-style: none;
   text-decoration: none;
   color: #000000;
@@ -251,10 +300,7 @@ background-color: #fb565a;
 .page-index h2 {
   font-size: 55px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1;
-  letter-spacing: normal;
   text-align: left;
   color: #000000;
 }
@@ -262,10 +308,6 @@ background-color: #fb565a;
 .page-index__tagline p {
   font-size: 16px;
   font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
   text-align: center;
   color: #283136;
 }
@@ -299,11 +341,11 @@ background-color: #fb565a;
   min-height: 781px;
 }
 
-.page-catalog__list {
+.form-filter__list {
   list-style: none;
 }
 
-.page-catalog__item {
+.form-filter__item {
   font-size: 14px;
   font-weight: normal;
 }
@@ -329,7 +371,11 @@ background-color: #fb565a;
 }
 
 .page-catalog__button {
+  width: 240px;
+  height: 50px;
+
   font: inherit;
+  font-style: normal;
   text-align: center;
   color: #000000;
   vertical-align: middle;
@@ -338,9 +384,6 @@ background-color: #fb565a;
   background-color: #eeeeee;
   border: none;
 
-  width: 240px;
-  height: 50px;
-  font-style: normal;
 }
 
 .page-catalog__button:hover {
@@ -361,7 +404,7 @@ background-color: #fb565a;
   list-style: none;
 
   margin-bottom: 15px;
-  background-color: #eeeeee;
+
   text-align: center;
   text-transform: uppercase;
   vertical-align: center;
@@ -380,6 +423,7 @@ background-color: #fb565a;
   width: 43px;
   height: 43px;
   padding: 20px;
+
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
 }
@@ -388,21 +432,23 @@ background-color: #fb565a;
   width: 43px;
   height: 43px;
   padding: 20px;
+
   border: solid 3px #dbdbdb;
 }
 
 .pagination-list__link--next{
   width: 260px;
   height: 50px;
-  font-weight: 500;
   padding: 20px;
+
+  font-weight: 500;
   text-transform: uppercase;
 }
 
 .page-index__button{
   width: 240px;
   height: 50px;
-  background-color: #fb565a;
+
   color:#ffffff;
   text-transform: uppercase;
 
@@ -422,8 +468,26 @@ background-color: #fb565a;
 }
 
 .page-index__button:active{
-  background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
+}
+
+.item__img{
+  width: 300px;
+  height: 146px;
+}
+
+.item__img--red{
+  background-image: url("../img/advantage-picture-red.png");
+}
+
+.item__img--green{
+  background-image: url("../img/advantage-picture-green.png");
+}
+
+.item__img--yellow{
+  background-image: url("../img/advantage-picture-yellow.png");
 }
 
 .projects__button--red {
@@ -461,6 +525,7 @@ background-color: #fb565a;
 .projects__button--yellow {
   width: 160px;
   height: 50px;
+
   background-color: #efc84a;
 }
 
@@ -509,49 +574,48 @@ color: #000000;
   text-align: center;
 }
 
-.advanteges {
-  text-align: center;
+/*.advantages {
+  width: 360px;
+  height: 481px;
+ 
+}*/
+
+.advantages__img{
+  width: 360px;
+  height: 208px;
+
+  background-image: url("../img/nerds-picture.png");
 }
 
-.advanteges__list {
+.advantages__list {
   list-style: none;
+  
 }
 
-.advanteges__item {
-  text-align: center;
+.advantages__block{
+  display: flex;
+  flex-direction: column;
+  
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  border: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
+.advantages__item {
+  width: 360px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  
+
 }
 
 .directions__tagline h2 {
   font: inherit;
   font-size: 45px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1;
-  letter-spacing: normal;
   text-align: left;
   color: #000000;
 }
 
-.text-style-1 {
-  font-weight: bold;
-  color: #000000;
-}
 
 /*----Сеточные стили ----*/
 
@@ -762,4 +826,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+.main-catalog__list {
+  list-style: none;
 }
