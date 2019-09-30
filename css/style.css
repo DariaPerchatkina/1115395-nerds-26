@@ -16,8 +16,8 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before,
- *::after {
+"*", "*"::before,
+ "*"::after {
    box-sizing: inherit;
   }
 
@@ -149,6 +149,12 @@ input[type="radio"].visually-hidden {
   padding: 78px 0 80px 0;
 }
 
+.slider-item__button {
+  width: 240px;
+  height: 50px;
+  background-color: #fb565a;
+}
+
 .slider-item:nth-child(1) {
   background-image: url("../img/slide-picture.png");
   background-repeat: no-repeat;
@@ -271,7 +277,6 @@ input[type="radio"].visually-hidden {
 .user-navigation__list .user-navigation__link {
   position: relative;
   padding-left: 60px;
-  margin-right: 140px;
 }
 
 .user-navigation__link::before {
@@ -323,11 +328,6 @@ background-color: #fb565a;
 .main-navigation__logo {
   width: 160px;
   height: 65px;
-
-  margin-left: 140px;
-  margin-top: 49px;
-  margin-right: 202px;
-  margin-bottom: 85px;
 }
 
 .main-navigation__logo:hover,
@@ -372,12 +372,14 @@ background-color: #fb565a;
   margin-right: 35px;
 }
 
+/*
 .big-divider{
   width: 1160px;
   height: 2px;
 
   color: white;
 }
+*/
 
 .directions__tagline {
   font-size: 45px;
@@ -759,11 +761,28 @@ color: #000000;
 }
 
 .directions__item {
-  text-align: center;
+  text-align: left;
 }
 
+
+.red-dash::before {
+  content: "";
+
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+}
+
+.red-dash::before {
+  margin-right: 11px;
+}
+*/
+
 .directions h3 {
-  text-align: center;
+  text-align: left;
 }
 
 .advanteges {
@@ -807,17 +826,15 @@ color: #000000;
 }
 
 /*----Сеточные стили ----*/
-
+/*
 .main-navigation__wrapper{
   width: 100%;
   background-color: #eeeeee;
 }
+*/
 
 .main-navigation{
   display: flex;
-
-  align-items: center;
-
   min-height: 132px;
 }
 
@@ -827,13 +844,13 @@ color: #000000;
   order: 0;
 }
 
-.main-navigation__wrapper .container {
+.main-header .container {
   display: flex;
   justify-content: space-between;
 }
 
 .container {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -846,7 +863,7 @@ color: #000000;
 .projects__list {
   display: flex;
   justify-content: space-between;
-  margin:0;
+  margin-top:80px;
   padding: 0;
 
   list-style: none;
@@ -863,7 +880,8 @@ color: #000000;
 .index-columns {
   display: flex;
   justify-content: space-between;
-  padding: 0px 80px;
+  width: 1159px;
+  /*padding: 0px 80px;*/
   margin-bottom: 140px;
 
 
@@ -874,6 +892,11 @@ color: #000000;
   min-height: 420px;
 
 }
+
+
+.directions__block {
+  width: 429px;
+} 
 
 .advanteges {
   width: 360px;
@@ -939,7 +962,7 @@ color: #000000;
 }
 
 .inner-page .main-navigation {
-  align-items: flex-start;
+  /*align-items: flex-start;*/
   flex-direction: row;
 }
 
