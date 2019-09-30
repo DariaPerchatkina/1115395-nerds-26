@@ -9,13 +9,13 @@
 </head>
 <body>
   <header class="main-header">
-      <nav class="main-navigation">
-        <div class="main-navigation__wrapper">
+    <div class="main-navigation__wrapper">
+      <div class="container">
+        <nav class="main-navigation">
           <a class="main-navigation__logo">
             <img class="main-header__img" src="img/svg-my-version/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
           </a>
           <h1 class="visually-hidden">Нёрдс</h1>
-          <div class="container">
             <ul class="site-navigation__list">
               <li class="site-navigation__item">
                 <a class="site-navigation__link" href="stidio.html">Студия</a>
@@ -35,18 +35,40 @@
                 <a class="user-navigation__link" href="basket.html"> Корзина </a>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
-      </nav>
-      <div class="page-index">
-        <h2>Долго, дорого, скрупулезно</h2>
-        <img class="page-index__slide1" src="img/slide-picture.png" alt="slide1">
-        <section>
-          <p class="page-index__tagline">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <button class="page-index__button btn-style" type="button">Узнай больше</button>
-        </section>
       </div>
     </header>
+    <section class="slider">
+      <div class="container">
+        <h2 class="visually-hidden">Приемущества</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+        </div>
+          <ul class="slider-list">
+            <li class="slider-item">
+              <h3>Долго, дорого,<br> скрупулезно.</h3>
+              <p class="slider-index__tagline">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <button class="slider-item__button btn-style" type="button">Узнай больше</button>
+            </li>
+            <li class="slider-item">
+              <h3>Любим математику как никто другой</h3>
+              <p class="slider-index__tagline">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <button class="slider-item__button btn-style" type="button">Узнай больше</button>
+            </li>
+            <li class="slider-item">
+              <h3>Только ночь,<br> только хардкор</h3>
+              <p class="slider-index__tagline">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+              <button class="slider-item__button btn-style" type="button">Узнай больше</button>
+            </li>
+          </ul>
+      </div>
+    </section>
     <main class="container">
       <section class="projects">
         <ul class="projects__list">
@@ -73,6 +95,7 @@
             </li>
         </ul>
       </section>
+      <div class="big-divider"></div>
       <div class="index-columns">
         <section class="directions">
           <h2 class="directions__tagline">Мы-маленькая, но гордая дизайн-студия из Краснодара.</h2>
@@ -85,22 +108,29 @@
           </ul>
         </section>
         <section class="advanteges">
-          <img src="img/nerds-picture.png" alt="Нёрдс">
-          <h3>С 2004 года любим точночть во всем:</h3>
-          <ul class="advanteges__list">
-            <li class="advanteges__item">
-              <span>146%</span>
-              <span>Уровень самоотдачи</span>
-            </li>
-            <li class="advanteges__item">
-              <span>100%</span>
-              <span>Соблюдение сроков</span>
-            </li>
-            <li class="advanteges__item">
-              <span>50%</span>
-              <span>Минимальная предоплата</span>
-            </li>
-          </ul>
+          <div class="advanteges__img"></div>
+            <div class="advantages__list">
+              <h3>С 2004 года любим точность во всем:</h3>
+                <div class="advantages__block">
+                  <dl>
+                    <div class="advantages__item">
+                      <dt></dt>
+                        <dd>146%</dd>
+                        <dd>Уровень самоотдачи</dd>
+                    </div>
+                    <div class="advantages__item">
+                      <dt></dt>
+                      <dd>100%</dd>
+                      <dd>Соблюдение сроков</dd>
+                    </div>
+                   <div class="advantages__item">
+                     <dt></dt>
+                     <dd>50%</dd>
+                     <dd>Минимальная предоплата</dd>
+                   </div>
+                 </dl>
+               </div>
+             </div>
         </section>
       </div>
       <div class="index-columns">
