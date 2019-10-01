@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 1200px;
+  min-width: 1160px;
 
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
@@ -411,8 +411,12 @@ background-color: #fb565a;
   list-style: none;
   display: flex;
   flex-direction: column;
-  /* border: solid 2px #d7dcde; */
+  /*border: solid 2px #d7dcde; */
   /* background-color: #ffffff; */
+}
+
+.appointment-form__item{
+  margin-right: 40px;
 }
 
 .appointment-form__item input {
@@ -1086,19 +1090,27 @@ color: #000000;
 .modal {
   position: fixed;
 
-   background-color: white;
-   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+  color: #000000;
+
+  background-color: white;
+  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
-.modal-login {
-  top: 120px;
-  left: 30%;
+.modal-appointment {
   width: 960px;
-  margin-left: -230px;
+
+  top: 1706px;
+  left: 50%;
+
+  display: none;
+  
+  margin-left: -480px;
+  /*
   padding-top: 73px;
   padding-bottom: 84px;
   padding-left: 100px;
   padding-right: 100px;
+  */
 }
 
 .modal-close {
@@ -1123,7 +1135,7 @@ color: #000000;
   top: 10px;
   left: 2px;
 
-  width: 19px;
+  width: 21px;
   height: 3px;
 
   background-color: #fb565a;
@@ -1136,10 +1148,11 @@ color: #000000;
 .modal-close::after {
   transform: rotate(-45deg);
 }
-.modal-login h2 {
-  margin: 0;
-  margin-bottom: 20px;
 
+.modal-appointment h3 {
+  margin-left: 101px;
+  margin-top: 73px;
+  margin-bottom: 49px;
 }
 
 .modal-description {
@@ -1148,4 +1161,42 @@ color: #000000;
 
   font-size: 45px;
   line-height: 1;
+}
+
+.appointment-form__columns {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 360px;
+}
+
+.appointment-form p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.appointment-form .appointment-form input[type="text"],
+.appointment-form input[type="email"],
+.appointment-form input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  
+  font: inherit;
+  color: #000000;
+  text-transform: inherit;
+
+  border: solid 2px #d7dcde;
+  background-color: #ffffff;
+}
+
+.appointment-form input:focus {
+  border: solid 2px #000000;
+  background-color: #ffffff;
+}
+
+.appointment-form__name .appointment-form__email {
+  display: flex;
+  justify-content: space-between;
+  
+
 }
