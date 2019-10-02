@@ -16,8 +16,9 @@ html {
   box-sizing: border-box;
 }
 
- "*", "*"::before,
- "*"::after {
+ 
+ *::before,
+ *::after {
    box-sizing: inherit;
   }
 
@@ -785,7 +786,7 @@ background-color: #fb565a;
 
 .index-columns {
   display: flex;
-  flex-direction: row;
+  flex-direction: initial;
   padding: 0px 80px;
   margin-bottom: 140px;
 }
