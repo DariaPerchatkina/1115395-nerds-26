@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Нёрдс-каталог</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="inner-page">
+  <header class="main-header">
+    <div class="container">
+      <nav class="main-navigation">
+        <div class="main-navigation__wrapper">
+          <a class="main-navigation__logo" href="index.html">
+            <img class="main-header__img" src="img/svg-my-version/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
+          </a>
+          <h1 class="visually-hidden">Нёрдс</h1>
+          <div class="container">
+            <ul class="site-navigation__list">
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="stidio.html">Студия</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="customers.html">Клиенты</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="catalog.html"> Магазин </a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="contacts.html"> Контакты </a>
+              </li>
+            </ul>
+            <ul class="user-navigation__list">
+              <li class="user-navigation__item">
+                <a class="user-navigation__link" href="basket.html"> Корзина </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+      <h2 class="page-catalog__title"> Магазин готовых шаблонов </h2>
+      <div class="catalog-columns">
+        <form class="page-catalog__filter" action="GET">
+          <fieldset class="page-catalog__block">
+            <legend>Стоимость:</legend>
+            <div>
+              <div></div>
+              <div></div>
+            </div>
+            <ul class="page-catalog__list">
+              <li class="page-catalog__item">
+                <label for="filter-from" >От:
+                  <input  class="page-catalog__input" id="filter-from" type="number" name="from" value="" placeholder="0">
+                </label>
+              </li>
+              <li class="page-catalog__item">
+                <label for="filter-before">До:
+                  <input class="page-catalog__input" id="filter-before" type="number" name="before" value="" placeholder="15000">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="page-catalog__block">
+            <legend >Сетка:</legend>
+            <ul class="page-catalog__list">
+              <li class="page-catalog__item">
+                <input class="page-catalog__input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная </label>
+              </li>
+              <li class="page-catalog__item">
+                <input class="page-catalog__input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="page-catalog__item">
+                <input class="page-catalog__input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="page-catalog__block">
+            <legend>Особенности</legend>
+            <ul class="page-catalog__list">
+              <li class="page-catalog__item">
+                <input class="page-catalog__input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="page-catalog__item">
+                <input class="page-catalog__input-checkbox" type="checkbox" name="benifits-block" id="filter-benefits-block">
+                <label for="filter-benefits-block">Блок преимуществ</label>
+              </li>
+              <li class="page-catalog__item">
+                <input class="page-catalog__input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="page-catalog__item">
+                <input class="page-catalog__input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="page-catalog__item">
+                <input class="page-catalog__input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                <label for="filter-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="page-catalog__button btn-style" type="submit">Показать</button>
+        </form>
+      <h2 class="visually-hidden"> список шаблонов </h2>
+      <section class="page-catalog">
+        <ul class="page-catalog__list">
+          <li class="page-catalog__item">
+            <a class="page-catalog__link" href="#">
+              <img src="img/img-sedona-jpg.jpg" alt="Седона">
+            </a>
+          </li>
+          <li class="page-catalog__item">
+            <a class="page-catalog__link" href="#">
+              <img src="img/img-pink-jpg.jpg" alt="Пинк">
+            </a>
+          </li>
+          <li class="page-catalog__item">
+            <a class="page-catalog__link" href="#">
+              <img src="img/img-barbershop-jpg.jpg" alt="Бородинский">
+            </a>
+          </li>
+          <li class="page-catalog__item">
+            <a class="page-catalog__link" href="#">
+              <img src="img/img-mishka-jpg.jpg" alt="Мишка">
+            </a>
+          </li>
+          <li class="page-catalog__item">
+            <a class="page-catalog__link" href="#">
+              <img src="img/img-aplus-jpg.jpg" alt="А+">
+            </a>
+          </li>
+          <li class="page-catalog__item">
+            <a class="page-catalog__link" href="#">
+              <img src="img/img-kvast-jpg.jpg" alt="Кваст">
+            </a>
+          </li>
+        </ul>
+        </div>
+        <ul class="pagination-list">
+        <li class="pagination-list__item  pagination-list__item--current">
+          <a class="pagination-list__link">1</a>
+        </li>
+        <li class="pagination-list__item">
+          <a class="pagination-list__link">2</a>
+        </li>
+        <li class="pagination-list__item">
+          <a class="pagination-list__link">3</a>
+        </li>
+        <li class="pagination-list__item">
+          <a class="pagination-list__link--next">следующая</a>
+        </li>
+      </ul>
+    </section>
+</main>
+<div class="index-columns">
+  <section class="contacts">
+    <h3>NЁRDS DESING STUDIO</h3>
+    <address>
+      Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+      Телефон: <a href="tel:+7812275-75-75">+7 (812) 275-75-75</a>
+    </address>
+    <section class="appointment">
+      <p>Напишите нам</p>
+      <form class="appointment-form" method="post">
+        <ul class="appointment-form__list">
+          <li class="appointment-form__item">
+            <label for="appointment-name">Ваше имя:</label>
+            <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </li>
+          <li class="appointment-form__item">
+            <label for="appointment-email">Ваш e-mail:</label>
+            <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
+          </li>
+          <li class="appointment-form__item">
+            <label for="appointment-text">Текст письма:</label>
+            <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
+          </li>
+        </ul>
+        <button class="appointment-form__button btn-style" type="button">Отправить</button>
+      </form>
+    </section>
+  </section>
+  <section>
+    <a class="main-map__link" href="map.html">
+      <span class="visually-hidden"> Карта </span>
+      <img src="img/2.png" alt="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">
+    </a>
+  </section>
+</div>
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-social">
+      <a class="footer-social__link">
+        <span class="visually-hidden">Вконтакте</span>
+         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
+           <path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z" aria-label="Нёрдс во ВКонтакте"/>
+         </svg>
+       </a>
+      <a class="footer-social__link">
+        <span class="visually-hidden">Facebook</span>
+         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+           <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" aria-label="Нёрдс в Facebook"/>
+         </svg>
+      </a>
+      <a class="footer-social__link">
+          <span class="visually-hidden">Instagram</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+          <path fill="#fff" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18zm0-11h-4V3h4z" aria-label="Нёрдс в Instagram"/>
+        </svg>
+      </a>
+    </div>
+    <div class="footer-sentence">
+      <p>Давайте дружить, это выгодно!</p>
+      <span>Скидка 10% для друзей из социальных сетей.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
