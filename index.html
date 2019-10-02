@@ -39,15 +39,37 @@
         </div>
       </nav>
     </div>
-      <div class="page-index">
-        <h2>Долго, дорого, скрупулезно</h2>
-        <img class="page-index__slide1" src="img/slide-picture.png" alt="slide1">
-        <section>
-          <p class="page-index__tagline">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <button class="page-index__button btn-style" type="button">Узнай больше</button>
-        </section>
+  </header>
+  <section class="slider">
+      <div class="container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider__controls">
+          <label class="slider__controls-item slider__controls-item--1" for="product-1">Первый</label>
+          <label class="slider__controls-item slider__controls-item--2" for="product-2">Второй</label>
+          <label class="slider__controls-item slider__controls-item--3" for="product-3">Третий</label>
+        </div>
+        <ul class="slider__list">
+          <li class="slider__item">
+            <h3>Долго, дорого,<br> скрупулезно.</h3>
+            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="slider__item-button button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider__item">
+            <h3>Любим математику как никто другой</h3>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="slider__item-button button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider__item">
+            <h3>Только ночь,<br> только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <a class="slider__item-button button" href="#">Узнать больше</a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </section>
     <main class="container">
       <h1 class="visually-hidden">Нёрдс</h1>
       <section class="projects">
@@ -103,62 +125,61 @@
         </section>
       </div>
       <div class="index-columns">
-        <section class="results">
-          <ul class="results__list">
-            <li class="results__item">
-              <a class="results__link" href="#">
-                <img src="img/borodinsli-logo.png" alt="borodinski">
+        <section class="partners">
+          <ul class="partners__list">
+            <li class="partners__item">
+              <a class="partners__link" href="#" aria-label="Барбершоп Бородинский">
+                <img src="img/borodinsli-logo.png" alt="borodinski" >
               </a>
             </li>
-            <li class="results__item">
-              <a class="results__link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <li class="partners__item">
+              <a class="partners__link" href="https://htmlacademy.ru/intensive/htmlcss"  aria-label="HTML-Academy">
                 <img src="img/htmlacdemy-logo.png" alt="htmlacademy">
               </a>
             </li>
-            <li class="results__item">
-              <a class="results__link" href="#">
-                <img src="img/pink-logo.png" alt="pink">
+            <li class="partners__item">
+              <a class="partners__link" href="#" aria-label="Pink">
+                <img src="img/pink-logo.png" alt="pink" >
               </a>
             </li>
-            <li class="results__item">
-              <a class="results__link" href="#">
-                <img src="img/mishka-logo.png" alt="mishka">
+            <li class="partners__item">
+              <a class="partners__link" href="#" aria-label="Mishka">
+                <img src="img/mishka-logo.png" alt="mishka" >
               </a>
             </li>
           </ul>
         </section>
       </div>
     </main>
-    <div class="index-columns">
-      <section class="contacts">
-        <h3>NЁRDS DESING STUDIO</h3>
-        <address>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          Телефон: <a href="tel:+7812275-75-75">+7 (812) 275-75-75</a>
-        </address>
-        <section class="appointment">
-          <p>Напишите нам</p>
-          <form class="appointment-form" method="post">
-            <ul class="appointment-form__list">
-              <li class="appointment-form__item">
-                <label for="appointment-name">Ваше имя:</label>
-                <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-              </li>
-              <li class="appointment-form__item">
-                <label for="appointment-email">Ваш e-mail:</label>
-                <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
-              </li>
-              <li class="appointment-form__item">
-                <label for="appointment-text">Текст письма:</label>
-                <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
-              </li>
-            </ul>
-            <button class="appointment-form__button btn-style" type="button">Отправить</button>
-          </form>
-        </section>
+    <section class="contacts">
+      <h3>NЁRDS DESING STUDIO</h3>
+      <address>
+        191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8<br>
+        тел.<a href="tel:+7812275-75-75">+7 (812) 275-75-75</a>
+      </address>
+      <a class="contacts__button btn-style" href="#">
+        <p>Напишите нам</p>
+      </a>
+      <form class="appointment-form" method="post">
+          <ul class="appointment-form__list">
+            <li class="appointment-form__item">
+              <label for="appointment-name">Ваше имя:</label>
+              <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+            </li>
+            <li class="appointment-form__item">
+              <label for="appointment-email">Ваш e-mail:</label>
+              <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
+            </li>
+            <li class="appointment-form__item">
+              <label for="appointment-text">Текст письма:</label>
+              <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
+            </li>
+          </ul>
+          <button class="appointment-form__button btn-style" type="submit">Отправить</button>
+        </form>
       </section>
-      <section>
-        <a class="main-map__link" href="map.html">
+          <a class="main-map__link" href="map.html">
           <span class="visually-hidden"> Карта </span>
           <img src="img/2.png" alt="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">
         </a>
