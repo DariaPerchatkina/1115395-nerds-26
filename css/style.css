@@ -48,7 +48,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  margin-bottom: 17px;
+  /*margin-bottom: 17px;*/
   min-height: 115px;
 
   background-color: #eeeeee;
@@ -259,7 +259,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
-  width: 440px;
+  width: 500px;
   margin:0;
   padding: 0;
 
@@ -473,6 +473,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   margin-right: 50px;
+  margin-top: 49px;
 
 }
 
@@ -480,7 +481,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
   display: flex;
   max-width: 115px;
-  margin-right: 140px;
+  margin-top: 49px;
 
 }
 
@@ -572,6 +573,8 @@ background-color: #fb565a;
 .main-navigation__logo {
   width: 160px;
   height: 65px;
+  margin-top: 49px;
+ 
 }
 
 .main-navigation__logo:hover,
