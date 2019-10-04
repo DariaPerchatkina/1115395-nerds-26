@@ -25,6 +25,8 @@ html {
 a {
   text-decoration: none;
   color: inherit;
+  text-align: center;
+  /* align-items: center; */
 }
 
 img {
@@ -244,19 +246,15 @@ input[type="radio"].visually-hidden {
   width: 440px;
   margin:0;
   padding: 0;
-
   list-style: none;
-
   min-height: 115px;
 }
 
-.user-navigation{
+.user-navigation {
   width: 116px;
   margin:0;
   padding: 0;
-
   list-style: none;
-
   min-height: 115px;
 
 }
@@ -273,16 +271,12 @@ input[type="radio"].visually-hidden {
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
 }
 
 .main-navigation__wrapper .container {
   display: flex;
   justify-content: space-between;
-}
-
-.site-navigation__list {
-  list-style: none;
 }
 
 .site-navigation__link {
@@ -299,17 +293,6 @@ input[type="radio"].visually-hidden {
 
 .site-navigation__link:active {
   color: rgba(0, 0, 0, 0.3);
-}
-
-.user-navigation {
-  font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  text-align: left;
-}
-
-.user-navigation__list {
-  list-style: none;
 }
 
 .user-navigation__link {
@@ -568,46 +551,49 @@ background-color: #fb565a;
 
 .pagination-list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
 
-  width: 443px;
+  padding: 0;
+  margin: 0;
 }
 
 .pagination-list__item {
   width: 50px;
   height: 50px;
-
+  margin-right: 11px;
   font:inherit;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
-  vertical-align: center;
   list-style: none;
-
   border: none;
   background-color: #eeeeee;
+
 }
 
 .pagination-list__item--next{
   width: 260px;
   height: 50px;
-
   font:inherit;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
   background-color: #eeeeee;
   border: none;
-
   list-style: none;
+  vertical-align: middle;
 }
 
-.pagination-list__link p{
-  height: 15px;
+.pagination-list__item:last-child {
+  margin-right: 0;
+}
 
+.pagination-list__link span{
+  height: 15px;
   font-size: 16px;
   font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
   color: #000000;
 }
 
@@ -860,19 +846,15 @@ address {
 .inner-page .main-header {
   align-items: flex-start;
   flex-direction: row;
-
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   min-height: 81px;
-
   background-color: #eeeeee;
 }
 
 .inner-page .main-navigation {
   align-items: flex-start;
   flex-direction: row;
-
   min-height: 81px;
-
   background-color: #eeeeee;
   /*  align-items: flex-start;
   flex-direction: row;*/
@@ -887,7 +869,7 @@ address {
 }
 
 .inner-page .user-navigation {
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .page-catalog__title{

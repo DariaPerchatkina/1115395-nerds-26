@@ -14,7 +14,7 @@
           <a class="main-navigation__logo" href="index.html">
             <img class="main-header__img" src="img/svg-my-version/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
           </a>
-            <ul class="site-navigation site-navigation__list">
+            <ul class="site-navigation">
               <li class="site-navigation__item">
                 <a class="site-navigation__link" href="stidio.html">Студия</a>
               </li>
@@ -28,7 +28,7 @@
                 <a class="site-navigation__link" href="contacts.html"> Контакты </a>
               </li>
             </ul>
-            <ul class="user-navigation__list">
+            <ul class="user-navigation">
               <li class="user-navigation__item">
                 <a class="user-navigation__link" href="basket.html"> Корзина </a>
               </li>
@@ -36,9 +36,8 @@
         </div>
       </nav>
   </header>
-  <main class="container">
-    <h1 class="visually-hidden">Каталог магазина готовых шаблонов</h1>
-      <h2 class="page-catalog page-catalog__title"> Магазин готовых шаблонов </h2>
+  <main class="page-catalog container">
+    <h1 class="page-catalog__title"> Магазин готовых шаблонов </h2>
       <section class="page-catalog__page-sorting page-sorting">
         <h2>Сортировать:</h2>
           <ul class="page-sorting__list">
@@ -102,7 +101,7 @@
             <ul class="form-filter__list">
               <li class="form-filter__item">
                 <input class="form-filter__input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
-                <label for="filter-slider">Слайдер</label> 
+                <label for="filter-slider">Слайдер</label>
               </li>
               <li class="form-filter__item">
                 <input class="form-filter__input-checkbox" type="checkbox" name="benifits-block" id="filter-benefits-block">
@@ -163,22 +162,22 @@
       <ul class="pagination-list">
         <li class="pagination-list__item  pagination-list__item--current">
           <a class="pagination-list__link" href="#">
-            <p>1</p>
+            <span>1</span>
           </a>
         </li>
         <li class="pagination-list__item">
           <a class="pagination-list__link" href="#">
-            <p>2</p>
+            <span>2</span>
           </a>
         </li>
         <li class="pagination-list__item">
           <a class="pagination-list__link" href="#">
-            <p>3</p>
+            <span>3</span>
           </a>
         </li>
         <li class="pagination-list__item pagination-list__item--next">
           <a class="pagination-list__link--next" href="#">
-            <p>следующая</p>
+            <span>следующая</span>
           </a>
         </li>
       </ul>
@@ -190,7 +189,7 @@
          тел.<a href="tel:+7812275-75-75">+7 (812) 275-75-75</a>
        </address>
        <a class="contacts__button btn-style" href="#">
-         <p>Напишите нам</p>
+         <span>Напишите нам</span>
        </a>
        <form class="appointment-form" method="post">
            <ul class="appointment-form__list">
@@ -210,7 +209,7 @@
            <button class="appointment-form__button btn-style" type="submit">Отправить</button>
          </form>
        </section>
-           <a class="main-map__link" href="map.html">
+           <a class="map-link" href="map.html">
            <span class="visually-hidden"> Карта </span>
            <img src="img/2.png" alt="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">
          </a>
