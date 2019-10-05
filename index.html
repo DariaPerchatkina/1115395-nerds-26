@@ -175,23 +175,29 @@
       <a class="contacts__button btn-style" href="#">
       <span>Напишите нам</span>
       </a>
-      <form class="appointment-form" method="post">
-          <ul class="appointment-form__list">
-            <li class="appointment-form__item">
-              <label for="appointment-name">Ваше имя:</label>
-              <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-            </li>
-            <li class="appointment-form__item">
-              <label for="appointment-email">Ваш e-mail:</label>
-              <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
-            </li>
-            <li class="appointment-form__item">
-              <label for="appointment-text">Текст письма:</label>
-              <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
-            </li>
-          </ul>
-          <button class="appointment-form__button btn-style" type="submit">Отправить</button>
-        </form>
+      <section class="modal modal__letter">
+          <h2>Напишите нам</h2>
+          <form class="appointment-form" method="post">
+              <ul class="appointment-form__list">
+                <li class="appointment-form__item">
+                  <label for="appointment-name">Ваше имя:</label>
+                  <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+                </li>
+                <li class="appointment-form__item">
+                  <label for="appointment-email">Ваш e-mail:</label>
+                  <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
+                </li>
+                <li class="appointment-form__item">
+                  <label for="appointment-text">Текст письма:</label>
+                  <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
+                </li>
+              </ul>
+              <button class="appointment-form__button btn-style" type="submit">Отправить</button>
+            </form>
+            <button class="modal__close" type="button">
+              <span class="visually-hidden">закрыть</span>
+            </button>
+         </section>
       </section>
           <a class="map-link" href="map.html">
           <span class="visually-hidden"> Карта </span>
@@ -226,28 +232,5 @@
         </div>
       </div>
     </footer>
-    <section class="modal modal-appointment">
-      <h3 class="modal-description">Напишите нам</h3>
-        <form class="appointment-form" method="post">
-          <div class="appointment-form__list">
-            <p class="appointment-form__name">
-              <label for="appointment-name">Ваше имя:</label>
-              <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-            </p>
-            <p class="appointment-form__email">
-                <label for="appointment-email">Ваш e-mail:</label>
-                <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
-            </p>
-            <p class="appointment-form__text">
-                <label for="appointment-text">Текст письма:</label>
-                <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
-            </p>
-          </div>
-        </form>
-      <button class="appointment-form__button btn-style" type="button">Отправить</button>
-      <button class="modal-close" type="button">
-      <span class="visually-hidden">Закрыть</span>
-      </button>
-    </section>
   </body>
   </html>
