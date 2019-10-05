@@ -73,54 +73,71 @@
       <section class="projects">
         <ul class="projects__list">
           <li class="projects__item">
-            <img src="img/advantage-picture-red.png" alt="picture1">
-            <h3>Веб-сайты</h3>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <button class="projects__button--red btn-style" type="button"> Заказать</button>
+            <div class="item__img item__img--red"></div>
+              <div class="projects__item item__block">
+              <h3>Веб-сайты</h3>
+                <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                <button class="projects__button projects__button--red btn-style" type="button"> Заказать</button>
+              </div>
           </li>
-          <li class="projects__item">
-            <img src="img/advantage-picture-green.png" alt="picture2">
-            <h3>Приложения</h3>
-            <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-            <button class="projects__button--green btn-style" type="button"> Заказать</button>
+          <li>
+            <div class="item__img item__img--green"></div>
+            <div class="projects__item item__block">
+              <h3>Приложения</h3>
+                <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
+                <button class="projects__button projects__button--green btn-style" type="button"> Заказать</button>
+            </div>
           </li>
-          <li class="projects__item">
-            <img src="img/advantage-picture-yellow.png" alt="picture3">
-            <h3>Презентации</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <button class="projects__button--yellow btn-style" type="button"> Заказать</button>
-          </li>
-        </ul>
+          <li>
+              <div class="item__img item__img--yellow"></div>
+              <div class="projects__item item__block">
+                <h3>Презентации</h3>
+                  <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                  <button class="projects__button projects__button--yellow btn-style" type="button"> Заказать</button>
+              </div>
+            </li>
+          </ul>
+        <div class="big-divider big-divider__projects"></div>
       </section>
       <div class="index-columns">
         <section class="directions">
           <h2 class="directions__tagline">Мы-маленькая, но гордая дизайн-студия из Краснодара.</h2>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <h3>Выполняем заказы на разработку:</h3>
-          <ul class="directions__list">
-            <li class="directions__item">Веб-сай любой сложности </li>
-            <li class="directions__item">Мобильных приложений для iOS и Android</li>
-            <li class="directions__item">Слайдшоу и видео для корпоративных презентаций</li>
-          </ul>
+          <div class="directions directions__block">
+            <h3>Выполняем заказы на разработку:</h3>
+              <ul class="directions__list">
+                <li class="directions__item red-dash">Веб-сай любой сложности </li>
+                <li class="directions__item red-dash">Мобильных приложений для iOS и Android</li>
+                <li class="directions__item red-dash">Слайдшоу и видео для корпоративных презентаций</li>
+              </ul>
+          </div>
         </section>
         <section class="advanteges">
-          <img src="img/nerds-picture.png" alt="Нёрдс">
-          <h3>С 2004 года любим точночть во всем:</h3>
-          <ul class="advanteges__list">
-            <li class="advanteges__item">
-              <span>146%</span>
-              <span>Уровень самоотдачи</span>
-            </li>
-            <li class="advanteges__item">
-              <span>100%</span>
-              <span>Соблюдение сроков</span>
-            </li>
-            <li class="advanteges__item">
-              <span>50%</span>
-              <span>Минимальная предоплата</span>
-            </li>
-          </ul>
+          <div class="advanteges__img"></div>
+            <div class="advantages__list">
+              <h3>С 2004 года любим точность во всем:</h3>
+                  <dl>
+                    <div class="advantages__block">
+                    <div class="advantages__item">
+                      <dt></dt>
+                        <dd class="advantages__item item__percent">146%</dd>
+                        <dd class="advantages__item item__result">Уровень самоотдачи</dd>
+                    </div>
+                    <div class="advantages__item">
+                      <dt></dt>
+                        <dd class="advantages__item item__percent">100%</dd>
+                        <dd class="advantages__item item__result">Соблюдение сроков</dd>
+                    </div>
+                    <div class="advantages__item">
+                      <dt></dt>
+                        <dd class="advantages__item item__percent">50%</dd>
+                        <dd class="advantages__item item__result">Минимальная предоплата</dd>
+                    </div>
+                  </div>
+                </dl>
+            </div>
         </section>
+        <div class="big-divider big-divider__advanteges"></div>
       </div>
       <div class="index-columns">
         <section class="partners">
@@ -209,5 +226,28 @@
         </div>
       </div>
     </footer>
+    <section class="modal modal-appointment">
+      <h3 class="modal-description">Напишите нам</h3>
+        <form class="appointment-form" method="post">
+          <div class="appointment-form__list">
+            <p class="appointment-form__name">
+              <label for="appointment-name">Ваше имя:</label>
+              <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+            </p>
+            <p class="appointment-form__email">
+                <label for="appointment-email">Ваш e-mail:</label>
+                <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
+            </p>
+            <p class="appointment-form__text">
+                <label for="appointment-text">Текст письма:</label>
+                <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
+            </p>
+          </div>
+        </form>
+      <button class="appointment-form__button btn-style" type="button">Отправить</button>
+      <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
   </body>
   </html>
