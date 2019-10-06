@@ -269,6 +269,15 @@ input[type="radio"].visually-hidden {
   min-height: 115px;
 }
 
+.site-navigation li {
+  display: inline-block;
+
+}
+
+.site-navigation a{
+  display: block;
+}
+
 .user-navigation {
   width: 116px;
   margin:0;
@@ -279,8 +288,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation__wrapper{
-  display: flex;
-  justify-content: space-between;
+  display: inline;
+  white-space: nowrap;
   width: 100%;
 
   background-color: #eeeeee;
