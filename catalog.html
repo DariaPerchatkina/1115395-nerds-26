@@ -38,26 +38,6 @@
   </header>
   <main class="page-catalog container">
     <h1 class="page-catalog__title"> Магазин готовых шаблонов </h1>
-      <section class="page-catalog__page-sorting page-sorting">
-        <h2>Сортировать:</h2>
-          <ul class="page-sorting__list">
-            <li class="page-sorting__item">
-              <button class="page-sorting__filter-button">по цене</button>
-            </li>
-            <li class="page-sorting__item">
-              <button class="page-sorting__filter-button">по типу</button>
-            </li>
-            <li class="page-sorting__item">
-              <button class="page-sorting__filter-button">по названию</button>
-            </li>
-            <li class="page-sorting__item">
-              <button class="page-sorting__filter-button" aria-label="по убыванию"> </button>
-            </li>
-            <li class="page-sorting__item">
-              <button class="page-sorting__filter-button" aria-label="по возрастанию"> </button>
-            </li>
-          </ul>
-        </section>
       <div class="catalog-columns">
         <form class="page-catalog__form-filter form-filter" action="GET">
           <fieldset class="form-filter__block">
@@ -123,6 +103,27 @@
           </fieldset>
           <button class="page-catalog__button btn-style" type="submit">Показать</button>
         </form>
+        <div class="container">
+        <section class="page-catalog__page-sorting page-sorting">
+            <h2>Сортировать:</h2>
+              <ul class="page-sorting__list">
+                <li class="page-sorting__item">
+                  <button class="page-sorting__filter-button">по цене</button>
+                </li>
+                <li class="page-sorting__item">
+                  <button class="page-sorting__filter-button">по типу</button>
+                </li>
+                <li class="page-sorting__item">
+                  <button class="page-sorting__filter-button">по названию</button>
+                </li>
+                <li class="page-sorting__item">
+                  <button class="page-sorting__filter-button" aria-label="по убыванию"> </button>
+                </li>
+                <li class="page-sorting__item">
+                  <button class="page-sorting__filter-button" aria-label="по возрастанию"> </button>
+                </li>
+              </ul>
+            </section>
       <section class="page-catalog__main-catalog main-catalog">
         <h2 class="visually-hidden"> список шаблонов </h2>
         <ul class="main-catalog__list">
@@ -158,6 +159,7 @@
           </li>
       </ul>
     </section>
+  </div>
   </div>
       <ul class="pagination-list">
         <li class="pagination-list__item">

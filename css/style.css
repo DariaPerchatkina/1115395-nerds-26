@@ -231,24 +231,33 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
   width: 440px;
-  margin:0;
+  margin-top: 83px;
   padding: 0;
   list-style: none;
   min-height: 115px;
 }
 
 .site-navigation__link {
+  margin-top: 83px;
+
+  font-size: 16px;
+  font-weight: inherit;
+  text-transform: uppercase;
+  color: #000000;
+  
   text-decoration: none;
-  color: inherit;
   text-align: center;
   align-items: center;
   box-sizing: border-box;
+
 }
 
 .user-navigation {
   width: 116px;
-  margin:0;
+  margin-top: 83px;
   padding: 0;
   list-style: none;
   min-height: 115px;
@@ -275,13 +284,6 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.site-navigation__link {
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #000000;
-}
-
 .site-navigation__link:hover,
 .site-navigation__link:focus {
   color: #fb565a;
@@ -294,7 +296,7 @@ input[type="radio"].visually-hidden {
 .user-navigation__link {
   font-size: 16px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: inherit;
   text-align: left;
   text-transform: uppercase;
   text-decoration: none;
@@ -314,6 +316,7 @@ input[type="radio"].visually-hidden {
 .main-navigation__logo {
   width: 160px;
   height: 65px;
+  margin-top: 49px;
   object-fit: contain;
 }
 
