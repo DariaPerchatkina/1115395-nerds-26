@@ -8,7 +8,6 @@ body {
   font-weight: 400;
   line-height: 24px;
 
-  font-weight: 400;
   color: #000000;
 
   background-color: white;
@@ -251,8 +250,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation__link {
-  display: block;
-  padding: 16px 24px;
+  
   position: relative;
   text-align: center;
   font-size: 16px;
@@ -264,17 +262,8 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation__link::before {
-  content: "";
-
-  position: absolute;
-  top: 20px;
-  left: -15px;
-  width: 15px;
-  height: 15px;
-
-  background-image: url("../img/svg-my-version/basket-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  content: url("../img/svg-my-version/basket-icon.svg");
+  padding-right: 26px;
 
   opacity: 0.3;
 }
@@ -285,7 +274,13 @@ input[type="radio"].visually-hidden {
 
   padding: 0;
   list-style: none;
-  min-height: 115px;
+}
+
+.user-navigation__item {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 38px;
+  padding-right: 0px;
 }
 
 .main-navigation__wrapper{
@@ -297,7 +292,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -427,6 +422,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 27px;
   font-weight: bold;
   text-align: left;
+}
+
+.item__percent sup{
+  padding-left: 75px;
+  
 }
 
 .page-index__slide1{
