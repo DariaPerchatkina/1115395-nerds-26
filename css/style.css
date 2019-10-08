@@ -340,6 +340,7 @@ input[type="radio"].visually-hidden {
 }
 
 .projects {
+  position: relative;
   margin-bottom: 123px;
   padding-left: 20px;
   padding-right: 20px;
@@ -434,10 +435,26 @@ input[type="radio"].visually-hidden {
 }
 
 .projects__item h3 {
+  position: relative;
+  margin: 0;
   margin-bottom: 26px;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.projects__item h3::after {
+  content: "";
+
+  position: absolute;
+  bottom: -255px;
+  left: 0px;
+
+  width: 1160px;
+  height: 2px;
+
+  background-color: #000000;
+  opacity: 0.1;
 }
 
 .projects__item p {
@@ -748,14 +765,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 89px;
 }
 
-.big-divider{
-  position: absolute;
-  width: 1160px;
-  height: 2px;
-  background-color: black;
-  opacity: 0.1;
-}
-
 .partners__list {
   list-style: none;
 }
@@ -843,6 +852,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts {
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1075,3 +1085,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
 }
+
+.map-link {
+  position: relative;
+}
+
