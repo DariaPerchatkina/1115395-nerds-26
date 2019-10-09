@@ -117,13 +117,13 @@ input[type="radio"].visually-hidden {
 }
 
 .slider__item:nth-child(2) {
-  background-image: url("../img/slide2.png");
+  background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
 
 .slider__item:nth-child(3) {
-  background-image: url("../img/slide3.png");
+  background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
   background-position: 100% 20px;
 }
@@ -250,7 +250,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation__link {
-  
+
   position: relative;
   text-align: center;
   font-size: 16px;
@@ -336,9 +336,9 @@ input[type="radio"].visually-hidden {
 
 .projects {
   position: relative;
-  margin-bottom: 123px;
   padding-left: 20px;
   padding-right: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .projects__list {
@@ -355,7 +355,6 @@ input[type="radio"].visually-hidden {
 .projects__item {
   width: 300px;
   text-align: left;
-  margin-bottom: 10px;
 }
 
 .item__img {
@@ -380,12 +379,13 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* margin-bottom: 140px; */
+  padding-top: 80px;
+  padding-bottom: 76px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .directions {
   width: 650px;
-  min-height: 409px;
 }
 
 .advanteges {
@@ -424,9 +424,9 @@ input[type="radio"].visually-hidden {
   text-align: left;
 }
 
-.item__percent sup{
-  padding-left: 75px;
-  
+.sup {
+  font-size: 30px;
+  vertical-align: 15px;
 }
 
 .page-index__slide1{
@@ -441,20 +441,6 @@ input[type="radio"].visually-hidden {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
-}
-
-.projects__item h3::after {
-  content: "";
-
-  position: absolute;
-  bottom: -255px;
-  left: 0px;
-
-  width: 1160px;
-  height: 2px;
-
-  background-color: #000000;
-  opacity: 0.1;
 }
 
 .projects__item p {
@@ -762,7 +748,7 @@ input[type="radio"].visually-hidden {
 
 .projects__button {
   position: relative;
-  margin-bottom: 89px;
+  margin-bottom: 80px;
 }
 
 .partners__list {
@@ -784,11 +770,16 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
 }
 
-.directions__list {width: 616px;list-style: none;}
+.directions__list {
+  /* width: 616px; */
+  list-style: none;
+  /* margin-bottom: 30px; */
+}
 
 .directions__item {
   text-align: left;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .directions__item::before {
@@ -812,6 +803,7 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   text-align: left;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .advanteges__list {
@@ -837,9 +829,12 @@ input[type="radio"].visually-hidden {
 /*----Сеточные стили ----*/
 
 .partners {
-  margin-bottom: 10px;
-
-  min-height: 90px;
+  /* FONT-VARIANT: JIS78; */
+  min-height: 70px;
+  padding: 0;
+  margin-top: 46px;
+  padding-bottom: 34px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .partners__list {
@@ -852,7 +847,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts {
-  
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1088,5 +1083,12 @@ input[type="radio"].visually-hidden {
 
 .map-link {
   position: relative;
+
+  width: 1440px;
+  height: 416px;
+  background-image: url("../img/2.png");
 }
 
+.modal {
+  display: none;
+}

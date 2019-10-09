@@ -98,7 +98,7 @@
             </li>
           </ul>
       </section>
-      <div class="big-divider"></div>
+      <div class=" container">
       <div class="index-columns">
         <section class="directions">
           <h2 class="directions__tagline">Мы-маленькая, но гордая дизайн-студия из Краснодара.</h2>
@@ -126,51 +126,54 @@
                     <div class="advantages__block">
                     <div class="advantages__item">
                       <dt></dt>
-                        <dd class="advantages__item item__percent">146 <sup>%</sup></dd>
+                        <dd class="advantages__item item__percent">146<span class="sup">%</span></dd>
                         <dd class="advantages__item item__result">Уровень самоотдачи</dd>
                     </div>
                     <div class="advantages__item">
                       <dt></dt>
-                        <dd class="advantages__item item__percent">100%</dd>
+                        <dd class="advantages__item item__percent">100<span class="sup">%</span></dd>
                         <dd class="advantages__item item__result">Соблюдение сроков</dd>
                     </div>
                     <div class="advantages__item">
                       <dt></dt>
-                        <dd class="advantages__item item__percent">50%</dd>
+                        <dd class="advantages__item item__percent">50<span class="sup">%</span></dd>
                         <dd class="advantages__item item__result">Минимальная предоплата</dd>
                     </div>
                   </div>
                 </dl>
             </div>
+          </div>
         </section>
       </div>
-      <div class="index-columns">
+      <div class=" container">
+      <!--<div class="index-columns">-->
         <section class="partners">
           <ul class="partners__list">
             <li class="partners__item">
               <a class="partners__link" href="https://htmlacademy.ru/intensive/htmlcss"  aria-label="HTML-Academy">
-                <img src="img/htmlacdemy-logo.png" alt="htmlacademy">
+                <img src="img/htmlacdemy-logo.png" width="199" height="68" alt="htmlacademy">
               </a>
             </li>
             <li class="partners__item">
               <a class="partners__link" href="#" aria-label="Барбершоп Бородинский">
-                <img src="img/borodinsli-logo.png" alt="borodinski" >
+                <img src="img/borodinsli-logo.png" width="209" height="90" alt="borodinski" >
               </a>
             </li>
             <li class="partners__item">
               <a class="partners__link" href="#" aria-label="Pink">
-                <img src="img/pink-logo.png" alt="pink" >
+                <img src="img/pink-logo.png" width="185" height="52" alt="pink" >
               </a>
             </li>
             <li class="partners__item">
               <a class="partners__link" href="#" aria-label="Mishka">
-                <img src="img/mishka-logo.png" alt="mishka" >
+                <img src="img/mishka-logo.png" width="173" height="84" alt="mishka" >
               </a>
             </li>
           </ul>
         </section>
       </div>
- <section class="contacts">
+    </div>
+    <section class="contacts">
       <h3>NЁRDS DESING STUDIO</h3>
       <address class="contacts__address">
         191186, Санкт-Петербург,<br>
@@ -180,6 +183,29 @@
       <a class="contacts__button btn-style" href="#">
       <span>Напишите нам</span>
       </a>
+      <section class="modal modal__letter">
+          <h2>Напишите нам</h2>
+          <form class="appointment-form" method="post">
+              <ul class="appointment-form__list">
+                <li class="appointment-form__item">
+                  <label for="appointment-name">Ваше имя:</label>
+                  <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+                </li>
+                <li class="appointment-form__item">
+                  <label for="appointment-email">Ваш e-mail:</label>
+                  <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
+                </li>
+                <li class="appointment-form__item">
+                  <label for="appointment-text">Текст письма:</label>
+                  <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
+                </li>
+              </ul>
+              <button class="appointment-form__button btn-style" type="submit">Отправить</button>
+            </form>
+            <button class="modal__close" type="button">
+              <span class="visually-hidden">закрыть</span>
+            </button>
+      </section>
       </section>
           <a class="map-link" href="map.html">
           <span class="visually-hidden"> Карта </span>
@@ -214,28 +240,5 @@
         </div>
       </div>
     </footer>
-    <section class="modal modal__letter">
-        <h2>Напишите нам</h2>
-        <form class="appointment-form" method="post">
-            <ul class="appointment-form__list">
-              <li class="appointment-form__item">
-                <label for="appointment-name">Ваше имя:</label>
-                <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-              </li>
-              <li class="appointment-form__item">
-                <label for="appointment-email">Ваш e-mail:</label>
-                <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
-              </li>
-              <li class="appointment-form__item">
-                <label for="appointment-text">Текст письма:</label>
-                <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
-              </li>
-            </ul>
-            <button class="appointment-form__button btn-style" type="submit">Отправить</button>
-          </form>
-          <button class="modal__close" type="button">
-            <span class="visually-hidden">закрыть</span>
-          </button>
-       </section>
   </body>
   </html>
