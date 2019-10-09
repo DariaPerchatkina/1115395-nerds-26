@@ -298,6 +298,15 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 }
 
+.contacts__container {
+  position: absolute;
+  width: 319px;
+  z-index: 1;
+  background-color: white;
+  padding: 30px;
+
+}
+
 .main-navigation__wrapper .container {
   display: flex;
   justify-content: space-between;
@@ -752,13 +761,28 @@ input[type="radio"].visually-hidden {
 }
 
 .partners__list {
+  display: flex;
+  justify-content: space-between;
+
   list-style: none;
 }
 
 .partners__item {
+  position: relative;
+
   color:#fb565a;
 
   opacity: 0.2;
+}
+
+.partners__item:not(:last-child)::after{
+  content: "";
+  position: absolute;
+  bottom: 35px;
+  right: -60px;
+  width: 2px;
+  height: 52px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .partners__item:focus,
@@ -829,7 +853,7 @@ input[type="radio"].visually-hidden {
 /*----Сеточные стили ----*/
 
 .partners {
-  /* FONT-VARIANT: JIS78; */
+ 
   min-height: 70px;
   padding: 0;
   margin-top: 46px;
@@ -837,15 +861,7 @@ input[type="radio"].visually-hidden {
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-.partners__list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.partners__item {
-  width: 300px;
-}
-
+/*
 .contacts {
 
   display: flex;
@@ -858,6 +874,15 @@ input[type="radio"].visually-hidden {
   color: #666666;
 
   background-color: white;
+} */
+
+.contacts_container {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  padding: 30px;
+  top: 30px;
+  
 }
 
 .contacts h3 {
@@ -1083,10 +1108,6 @@ input[type="radio"].visually-hidden {
 
 .map-link {
   position: relative;
-
-  width: 1440px;
-  height: 416px;
-  background-image: url("../img/2.png");
 }
 
 .modal {
