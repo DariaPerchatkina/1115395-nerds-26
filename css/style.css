@@ -303,7 +303,7 @@ input[type="radio"].visually-hidden {
   background-color: white;
   padding-top: 54px;
   top: 30px;
-  /* right: 1px; */
+  
 }
 
 .main-navigation__wrapper .container {
@@ -475,6 +475,10 @@ input[type="radio"].visually-hidden {
 
 .directions__block {
   width: 650px;
+}
+
+.appointment-form {
+  display: none;
 }
 
 .appointment-form__list {
@@ -862,11 +866,13 @@ input[type="radio"].visually-hidden {
 .contacts {
   display: flex;
   position: relative;
-  /* vertical-align: middle; */
+  align-items: center;
   width: 100%;
   height: 416px;
   margin-top: 80px;
   background-image: url("../img/2.png");
+  background-repeat: no-repeat;
+ 
 }
 
 .contacts_container {
@@ -1099,10 +1105,8 @@ input[type="radio"].visually-hidden {
 }
 
 .map-link {
-  display: flex;
   position: relative;
-  margin-top: 80px;
-  /* background-image:  url("../img/2.png"); */
+  
 }
 
 .modal {
