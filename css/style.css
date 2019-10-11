@@ -309,9 +309,14 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.site-navigation__link:hover,
-.site-navigation__link:focus {
+.site-navigation__link:hover {
   color: #fb565a;
+}
+
+.site-navigation__link:enabled::after {
+  width: 74px;
+  height: 2px;
+  background-color: #fb565a;
 }
 
 .site-navigation__link:active {
@@ -359,6 +364,10 @@ input[type="radio"].visually-hidden {
 }
 
 .projects__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   width: 300px;
   text-align: left;
 }
@@ -395,6 +404,8 @@ input[type="radio"].visually-hidden {
 }
 
 .advanteges {
+  display: flex;
+  flex-wrap: wrap;
   width: 360px;
   min-height: 409px;
   text-align: right;
@@ -419,12 +430,12 @@ input[type="radio"].visually-hidden {
 .advantages__block {
   display: flex;
   flex-direction: row;
-  width: 305px;
+  
   text-align: left;
 }
 
 .advantages__item {
-  align-items: inherit;
+  padding-right: 0px;
 }
 
 .item__percent {
@@ -432,6 +443,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 27px;
   font-weight: bold;
   text-align: left;
+  margin-right: 24px;
 }
 
 .sup {
@@ -767,6 +779,9 @@ input[type="radio"].visually-hidden {
 .partners__list {
   display: flex;
   justify-content: space-between;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
   list-style: none;
 }
@@ -857,7 +872,7 @@ input[type="radio"].visually-hidden {
 
 .partners {
 
-  min-height: 70px;
+  min-height: 130px;
   padding: 0;
   margin-top: 46px;
   padding-bottom: 34px;
