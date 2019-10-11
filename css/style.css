@@ -400,7 +400,7 @@ input[type="radio"].visually-hidden {
   width: 360px;
   min-height: 409px;
   text-align: right;
-  margin-left: auto;
+  
 }
 
 .advanteges__img {
@@ -423,6 +423,10 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   width: 305px;
   text-align: left;
+}
+
+.advantages__item {
+  align-items: inherit;
 }
 
 .item__percent {
