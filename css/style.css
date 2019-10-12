@@ -299,9 +299,12 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 308px;
+  min-height: 308px;
   width: 319px;
   background-color: white;
+  position: absolute;
+  top: 55px;
+  left: 140px;
 }
 
 .main-navigation__wrapper .container {
@@ -313,10 +316,8 @@ input[type="radio"].visually-hidden {
   color: #fb565a;
 }
 
-.site-navigation__link:enabled::after {
-  width: 74px;
-  height: 2px;
-  background-color: #fb565a;
+.site-navigation__link--current {
+  border-bottom: 2px solid #fb565a;
 }
 
 .site-navigation__link:active {
@@ -347,7 +348,6 @@ input[type="radio"].visually-hidden {
 
 .projects {
   position: relative;
-  padding-left: 20px;
   padding-right: 20px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
@@ -396,6 +396,8 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   padding-top: 80px;
   padding-bottom: 76px;
+  padding-left: 0px;
+  padding-right: 0px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -875,7 +877,9 @@ input[type="radio"].visually-hidden {
   min-height: 130px;
   padding: 0;
   margin-top: 46px;
-  padding-bottom: 34px;
+  margin-top: 0px;
+  padding-top: 46px;
+  padding-bottom: 44px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -889,7 +893,7 @@ input[type="radio"].visually-hidden {
   margin-top: 80px;
   background-image: url("../img/2.png");
   background-repeat: no-repeat;
-
+  
 }
 
 .contacts_container {
@@ -902,7 +906,6 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts h3 {
-  margin-top: 0;
   margin-bottom: 32px;
   font-size: 18px;
   font-weight: bold;
@@ -910,6 +913,7 @@ input[type="radio"].visually-hidden {
 
 .contacts__address {
   font-style: normal;
+  color: #666666
 }
 
 .contacts__tel {
@@ -921,7 +925,7 @@ input[type="radio"].visually-hidden {
 .contacts__button {
   width: 219px;
   height: 50px;
-  margin-top: 50px;
+  margin-top: 10px;
   font: inherit;
   text-align: center;
   line-height: 50px;
@@ -986,16 +990,20 @@ input[type="radio"].visually-hidden {
 
 .page-catalog__title{
   margin: 0;
-  margin-bottom: 116px;
+  margin-bottom: 60px;
   padding: 0;
-
+  padding-top: 82px;
+  padding-bottom: 116px;
   font-style: normal;
+  background-color: #eeeeee;
 
   /* Временно для сетки */
   min-height: 55px;
 }
 
 .page-sorting {
+  display: flex;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
   margin-bottom: 59px;
@@ -1025,11 +1033,23 @@ input[type="radio"].visually-hidden {
 
 .main-catalog__item {
   width: 360px;
-  margin-bottom: 33px;
+  margin-bottom: 63px;
   margin-right: 40px;
 
   /* Временно для сетки */
-  min-height: 616px;
+  min-height: 576px;
+}
+
+.main-catalog__link {
+ position: relative;
+}
+
+.main-catalog__link::before {
+  position: absolute;
+  top: -599px;
+  content: url("../img/svg-my-version/browser.svg");
+  padding: 0;
+  opacity: 0.12;
 }
 
 .main-catalog__item:nth-child(2n) {
@@ -1110,7 +1130,7 @@ input[type="radio"].visually-hidden {
   margin-top: 45px;
 }
 
-.main-footer .container {
+.main-footer {
   display: flex;
   margin-top: 69px;
 }
@@ -1127,4 +1147,54 @@ input[type="radio"].visually-hidden {
 
 .modal {
   display: none;
+}
+
+/*
+.checkbox {
+ width: 23px;
+ height: 23px;
+ border: 2px solid #4d4d4d;
+ border-radius:2px;
+ background-color: white;
+}
+
+.checkbox:hover {
+  width: 1px;
+  height: 15px;
+  color:#4d4d4d;
+  transform: rotate(-45deg);
+}
+*/
+
+.option {
+  display: block;
+  text-transform: uppercase;
+}
+
+.form-filter__input--checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-filter__input--box {
+  position: absolute;
+  margin-left: -1.5em;
+  width: 1em;
+  height: 1em;
+  background-image: url("../img/svg-my-version/checkbox-off.svg");
+}
+
+.form-filter__input {
+  padding-left: 1.5em;
+}
+
+.form-filter__input--checkbox:checked + .form-filter__input--box {
+  background-image: url("../img/svg-my-version/checkbox-on.svg");
+}
+
+.form-filter__input--checkbox:focus + .form-filter__input--box {
+  background-image: url("../img/svg-my-version/checkbox-off.svg");
+  opacity: 0.1;
 }
