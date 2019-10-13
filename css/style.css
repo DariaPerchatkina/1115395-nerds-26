@@ -1018,6 +1018,13 @@ input[type="radio"].visually-hidden {
   min-height: 702px;
 }
 
+.form-filter legend {
+  margin-bottom: 21px;
+
+  font-size: 18px;
+  line-height: 1.67;
+}
+
 .main-catalog {
   width: 760px;
   min-height: 1914px;
@@ -1117,15 +1124,172 @@ input[type="radio"].visually-hidden {
 }
 
 .form-filter__block {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 58px;
+  
+  
   border: none;
-  text-transform: uppercase;
-
   list-style-type: none;
+}
+
+.form-filter__item label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
 }
 
 .form-filter__list {
+  padding:0;
+  margin:0;
+
+  line-height: 1.25;
   list-style-type: none;
 }
+
+.form-filter__item {
+  margin-bottom: 25px;
+  padding-left: 36px;
+}
+
+.form-filter__input--checkbox + label::before {
+  content: "";
+  background-image: url("../img/svg-my-version/checkbox-off.svg");
+  position: absolute;
+  left: -42px;
+  top: -2px;
+   
+  width: 23px;
+  height: 23px;
+  border-radius: 3px;
+
+  opacity: 0.4;
+}
+
+.form-filter__input--checkbox:checked + label::before {
+  content: "";
+  background-image: url("../img/svg-my-version/checkbox-on.svg");
+
+  position: absolute;
+  top: -2px;
+  left: -42px;
+
+  width: 27px;
+  height: 23px;
+}
+
+.form-filter__input--checkbox:hover + label::before {
+  content: "";
+  background-image: url("../img/svg-my-version/checkbox-on.svg");
+
+  position: absolute;
+  top: -2px;
+  left: -42px;
+
+  width: 27px;
+  height: 23px;
+  opacity: 1;
+}
+
+.form-filter__input--checkbox:disabled + label::before {
+  content: "";
+  background-image: url("../img/svg-my-version/checkbox-on.svg");
+
+  position: absolute;
+  top: -2px;
+  left: -42px;
+
+  width: 27px;
+  height: 23px;
+  opacity: 0.1;
+}
+
+.form-filter__input--checkbox:focus + label::before {
+  content: "";
+  background-image: url("../img/svg-my-version/checkbox-on.svg");
+
+  position: absolute;
+  top: -2px;
+  left: -42px;
+
+  width: 27px;
+  height: 23px;
+  opacity: 1;
+}
+
+.form-filter__input--radio +label::before {
+  content: "";
+  background-image: url("../img/svg-my-version/radio-off.svg");
+
+  position: absolute;
+  left: -42px;
+  top: -2px;
+
+  width: 25px;
+  height: 25px;
+  
+  border-radius: 50%;
+  opacity: 0.25;
+}
+
+.form-filter__input--radio:checked +label::before {
+  content:  "";
+  background-image: url("../img/svg-my-version/radio-on.svg");
+  position: absolute;
+  top: -2px;
+  left: -42px;
+
+  width: 25px;
+  height: 25px;
+
+  border-radius: 50%;
+}
+
+.form-filter__input--radio:hover +label::before {
+  content:  "";
+  background-image: url("../img/svg-my-version/radio-off.svg");
+  position: absolute;
+  top: -2px;
+  left: -42px;
+
+  width: 25px;
+  height: 25px;
+
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.form-filter__input--radio:disabled +label::before {
+  content:  "";
+  background-image: url("../img/svg-my-version/radio-on.svg");
+  position: absolute;
+  top: -2px;
+  left: -42px;
+
+  width: 25px;
+  height: 25px;
+
+  border-radius: 50%;
+  opacity: 0.1;
+}
+ 
+.form-filter__input--radio:focus +label::before {
+  content:  "";
+  background-image: url("../img/svg-my-version/radio-on.svg");
+  position: absolute;
+  top: -2px;
+  left: -42px;
+
+  width: 25px;
+  height: 25px;
+
+  border-radius: 50%;
+  opacity: 1;
+}
+
 .inner-page .main-footer {
   margin-top: 45px;
 }
@@ -1150,6 +1314,13 @@ input[type="radio"].visually-hidden {
 }
 
 /*
+.form-filter__sorting {
+  display: flex;
+  margin-top: 13px;
+  font-size: 14px;
+}
+
+
 .checkbox {
  width: 23px;
  height: 23px;
@@ -1164,7 +1335,7 @@ input[type="radio"].visually-hidden {
   color:#4d4d4d;
   transform: rotate(-45deg);
 }
-*/
+
 
 .option {
   display: block;
@@ -1173,9 +1344,10 @@ input[type="radio"].visually-hidden {
 
 .form-filter__input--checkbox {
   position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 .form-filter__input--box {
@@ -1183,7 +1355,9 @@ input[type="radio"].visually-hidden {
   margin-left: -1.5em;
   width: 1em;
   height: 1em;
-  background-image: url("../img/svg-my-version/checkbox-off.svg");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E");
+  opacity: 0.4;
+
 }
 
 .form-filter__input {
@@ -1191,10 +1365,15 @@ input[type="radio"].visually-hidden {
 }
 
 .form-filter__input--checkbox:checked + .form-filter__input--box {
-  background-image: url("../img/svg-my-version/checkbox-on.svg");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
 }
 
 .form-filter__input--checkbox:focus + .form-filter__input--box {
-  background-image: url("../img/svg-my-version/checkbox-off.svg");
-  opacity: 0.1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E");
+  opacity: 1;
 }
+
+.form-filter__input--checkbox:checked:focus + .form-filter__input--box {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
+  opacity: 1;
+}*/
