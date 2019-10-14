@@ -44,34 +44,24 @@
         <form class="page-catalog__form-filter form-filter" action="GET">
           <fieldset class="form-filter__block">
             <legend>Стоимость:</legend>
-              <div class="form-filter__controls filter__controls">
-                <div class="filter__controls--range filter-range">
-                  <div class="filter-range__scale filter-scale">
-                    <div class="filter-scale__bar filter-bar"></div>
+              <div class="form-filter__range-filter">
+                <div class="form-filter__range-controls">
+                  <div class="form-filter__scale">
+                    <div class="form-filer__bar"></div>
                   </div>
-                  <div class="filter-scale__toggle filter-toggle__min"></div>
-                  <div class="filter-scale__toggle toggle__max"></div>
+                  <div class="form-filter__toggle toggle__min"></div>
+                  <div class="form-filter__toggle toggle__max"></div>
                 </div>
-                <div class="filter__controls--price filter-price">
-                  <label class="filter-price__min">от <input name="price__min" type="text" value="0"></label>
-                  <label class="filter-price__max">до <input name="price__max" type="text" value="15000"></label>
+                <div class="form-filter__price-controls">
+                  <label class="form-filter__min-price">От
+                    <input name="min-price" type="text" value="0">
+                  </label>
+                  <label class="form-filter__max-price">От
+                      <input name="max-price" type="text" value="15000">
+                    </label>
                 </div>
               </div>
-
-
-              <ul class="form-filter__list">
-                <li class="form-filter__item">
-                  <label>От:
-                    <input  class="form-filter__input" type="number" name="from" value="" placeholder="0">
-                  </label>
-                </li>
-              <li class="form-filter__item">
-               <label>До:
-                 <input class="form-filter__input" type="number" name="before" value="" placeholder="15000">
-               </label>
-             </li>
-            </ul>
-        </fieldset>
+            </fieldset>
         <fieldset class="form-filter__block">
           <legend>Сетка:</legend>
             <ul class="form-filter__list">
@@ -150,13 +140,13 @@
             </div>
             <div class="form-filter__sorting">
                   <label  for="down" name="down">
-                      <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="down"  checked>
+                      <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="down" id="down" checked>
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                         <path fill="#231F20" d="M5.5 10L0 0h11"/>
                     </svg>
                   </label>
                   <label  for="up" name="up">
-                      <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="up"  checked>
+                      <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="up" id="up" checked>
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                         <path fill="#231F20" d="M5.5 0L0 10h11z"/>
                       </svg>
