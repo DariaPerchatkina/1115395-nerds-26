@@ -411,7 +411,7 @@ input[type="radio"].visually-hidden {
   width: 360px;
   min-height: 409px;
   text-align: right;
-  
+
 }
 
 .advanteges__img {
@@ -432,7 +432,7 @@ input[type="radio"].visually-hidden {
 .advantages__block {
   display: flex;
   flex-direction: row;
-  
+
   text-align: left;
 }
 
@@ -893,7 +893,7 @@ input[type="radio"].visually-hidden {
   margin-top: 80px;
   background-image: url("../img/2.png");
   background-repeat: no-repeat;
-  
+
 }
 
 .contacts_container {
@@ -1127,10 +1127,39 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   margin-bottom: 58px;
-  
-  
+
+
   border: none;
   list-style-type: none;
+}
+
+.filter__controls{
+  width: 260px;
+  margin-top: 49px;
+}
+
+
+.form-filter__block label {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.filter-range {
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+
+  background-color: #f1f1f1;
+
+  border-radius: 5px;
+}
+
+.filter-range .filter-scale {
+  height: 2px;
+
+  background: #d7dcde;
 }
 
 .form-filter__item label {
@@ -1161,7 +1190,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: -42px;
   top: -2px;
-   
+
   width: 23px;
   height: 23px;
   border-radius: 3px;
@@ -1230,7 +1259,7 @@ input[type="radio"].visually-hidden {
 
   width: 25px;
   height: 25px;
-  
+
   border-radius: 50%;
   opacity: 0.25;
 }
@@ -1275,7 +1304,7 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
   opacity: 0.1;
 }
- 
+
 .form-filter__input--radio:focus +label::before {
   content:  "";
   background-image: url("../img/svg-my-version/radio-on.svg");

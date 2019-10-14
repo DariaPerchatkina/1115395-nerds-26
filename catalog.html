@@ -36,7 +36,7 @@
         </div>
       </nav>
   </header>
-  <section> 
+  <section>
     <h1 class="page-catalog__title"> Магазин готовых шаблонов </h1>
   </section>
   <main class="page-catalog container">
@@ -44,10 +44,21 @@
         <form class="page-catalog__form-filter form-filter" action="GET">
           <fieldset class="form-filter__block">
             <legend>Стоимость:</legend>
-              <div>
-                <div></div>
-                <div></div>
+              <div class="form-filter__controls filter__controls">
+                <div class="filter__controls--range filter-range">
+                  <div class="filter-range__scale filter-scale">
+                    <div class="filter-scale__bar filter-bar"></div>
+                  </div>
+                  <div class="filter-scale__toggle filter-toggle__min"></div>
+                  <div class="filter-scale__toggle toggle__max"></div>
+                </div>
+                <div class="filter__controls--price filter-price">
+                  <label class="filter-price__min">от <input name="price__min" type="text" value="0"></label>
+                  <label class="filter-price__max">до <input name="price__max" type="text" value="15000"></label>
+                </div>
               </div>
+
+
               <ul class="form-filter__list">
                 <li class="form-filter__item">
                   <label>От:
@@ -123,7 +134,7 @@
         </form>
         <div class="page-catalog__content">
         <section class="page-catalog__page-sorting page-sorting">
-          <div> 
+          <div>
             <h2>Сортировать:</h2>
           </div>
             <div class="form-filter__sorting">
@@ -149,12 +160,12 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                         <path fill="#231F20" d="M5.5 0L0 10h11z"/>
                       </svg>
-                      
-                    
+
+
                   </label>
             </div>
-         
-             
+
+
 <!--
               <ul class="page-sorting__list">
                 <li class="page-sorting__item">
