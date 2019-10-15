@@ -53,11 +53,11 @@
                   <div class="form-filter__toggle toggle__max"></div>
                 </div>
                 <div class="form-filter__price-controls">
-                  <label class="form-filter__min-price">От
-                    <input name="min-price" type="text" value="0">
+                  <label class="form-filter__label label__price-min">От
+                    <input class="form-filter__input form-filter__input--min" name="min-price" type="text" value="0">
                   </label>
-                  <label class="form-filter__max-price">От
-                      <input name="max-price" type="text" value="15000">
+                  <label class="form-filter__label label__price-max">До
+                      <input class="form-filter__input form-filter__input--max" name="max-price" type="text" value="15000">
                     </label>
                 </div>
               </div>
@@ -67,19 +67,19 @@
             <ul class="form-filter__list">
               <li class="form-filter__item">
                 <input class="visually-hidden form-filter__input form-filter__input--radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
-                <label for="filter-adaptive">
+                <label class="form-filter__label" for="filter-adaptive">
                     Адаптивная
                </label>
               </li>
               <li class="form-filter__item">
                 <input class="visually-hidden form-filter__input  form-filter__input--radio" type="radio" name="grid" value="fixed" id="filter-fixed">
-                <label for="filter-fixed">
+                <label class="form-filter__label" for="filter-fixed">
                     Фиксированная
                 </label>
               </li>
               <li class="form-filter__item">
                 <input class="visually-hidden form-filter__input  form-filter__input--radio" type="radio" name="grid" value="rubber" id="filter-rubber">
-                <label for="filter-rubber">
+                <label class="form-filter__label" for="filter-rubber">
                     Резиновая
                 </label>
               </li>
@@ -90,31 +90,31 @@
             <ul class="form-filter__list">
               <li class="form-filter__item">
                 <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="slider" id="filter-slider" checked>
-                <label for="filter-slider">
+                <label class="form-filter__label" for="filter-slider">
                   Слайдер
                 </label>
               </li>
               <li class="form-filter__item">
                 <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="benifits-block" id="filter-benefits-block">
-                  <label for="filter-benefits-block">
+                  <label class="form-filter__label" for="filter-benefits-block">
                   Блок преимуществ
                 </label>
               </li>
               <li class="form-filter__item">
                 <input class="visually-hidden form-filter__input  form-filter__input--checkbox" type="checkbox" name="news" id="filter-news" checked>
-                <label for="filter-news">
+                <label class="form-filter__label" for="filter-news">
                   Новости
                 </label>
               </li>
               <li class="form-filter__item">
                 <input class="visually-hidden form-filter__input  form-filter__input--checkbox" type="checkbox" name="gallery" id="filter-gallery">
-                  <label for="filter-gallery">
+                  <label class="form-filter__label" for="filter-gallery">
                   Галерея
                 </label>
               </li>
               <li class="form-filter__item">
                 <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="basket" id="filter-basket">
-                  <label  for="filter-basket">
+                  <label class="form-filter__label" for="filter-basket">
                     Корзина
                 </label>
               </li>
@@ -128,18 +128,18 @@
             <h2>Сортировать:</h2>
           </div>
             <div class="form-filter__sorting">
-                  <label for="price" name="filter">
+                  <label class="form-filter__label" for="price" name="filter">
                     <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="price" id="price"  checked>по цене
                   </label>
-                  <label for="type" name="filter">
+                  <label class="form-filter__label" for="type" name="filter">
                       <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="type" id="type" checked>по типу
                   </label>
-                  <label  for="name" name="filter">
+                  <label class="form-filter__label" for="name" name="filter">
                       <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="name" id="name" checked>по названию
                   </label>
             </div>
             <div class="form-filter__sorting">
-                  <label  for="down" name="down">
+                  <label for="down" name="down">
                       <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="down" id="down" checked>
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                         <path fill="#231F20" d="M5.5 10L0 0h11"/>
