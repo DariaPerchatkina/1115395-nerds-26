@@ -485,6 +485,14 @@ input[type="radio"].visually-hidden {
 
 .appointment-form {
   display: none;
+  
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0;
+  padding: 20px;
+  list-style: none;
+  background: #ffffff;
 }
 
 .appointment-form__list {
