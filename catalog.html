@@ -16,21 +16,31 @@
           </a>
             <ul class="site-navigation">
               <li class="site-navigation__item">
-                <a class="site-navigation__link" href="stidio.html">Студия</a>
+                <a class="site-navigation__link" href="stidio.html">
+                  <span class="site-navigation__span">Студия</span>
+                </a>
               </li>
               <li class="site-navigation__item">
-                <a class="site-navigation__link" href="customers.html">Клиенты</a>
+                <a class="site-navigation__link" href="customers.html">
+                  <span class="site-navigation__span">Клиенты</span>
+                </a>
               </li>
               <li class="site-navigation__item ">
-                <a class="site-navigation__link site-navigation__link--current" href="catalog.html">Магазин</a>
+                <a class="site-navigation__link site-navigation__link--current" href="catalog.html">
+                  <span class="site-navigation__span site-navigation__span--current">Магазин</span>
+                </a>
               </li>
               <li class="site-navigation__item">
-                <a class="site-navigation__link" href="contacts.html"> Контакты </a>
+                <a class="site-navigation__link" href="contacts.html"> 
+                  <span class="site-navigation__span">Контакты</span> 
+                </a>
               </li>
             </ul>
             <ul class="user-navigation">
               <li class="user-navigation__item">
-                <a class="user-navigation__link" href="basket.html"> Корзина </a>
+                <a class="user-navigation__link" href="basket.html"> 
+                  <span class="site-navigation__span">Корзина</span> 
+                </a>
               </li>
             </ul>
         </div>
@@ -72,7 +82,7 @@
                </label>
               </li>
               <li class="form-filter__item">
-                <input class="visually-hidden form-filter__input  form-filter__input--radio" type="radio" name="grid" value="fixed" id="filter-fixed">
+                <input class="visually-hidden form-filter__input  form-filter__input--radio" type="radio" name="grid" value="fixed" id="filter-fixed" disabled>
                 <label class="form-filter__label" for="filter-fixed">
                     Фиксированная
                 </label>
@@ -95,7 +105,7 @@
                 </label>
               </li>
               <li class="form-filter__item">
-                <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="benifits-block" id="filter-benefits-block">
+                <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="benifits-block" id="filter-benefits-block" disabled>
                   <label class="form-filter__label" for="filter-benefits-block">
                   Блок преимуществ
                 </label>
@@ -154,26 +164,6 @@
 
                   </label>
             </div>
-
-
-<!--
-              <ul class="page-sorting__list">
-                <li class="page-sorting__item">
-                  <button class="page-sorting__filter-button">по цене</button>
-                </li>
-                <li class="page-sorting__item">
-                  <button class="page-sorting__filter-button">по типу</button>
-                </li>
-                <li class="page-sorting__item">
-                  <button class="page-sorting__filter-button">по названию</button>
-                </li>
-                <li class="page-sorting__item">
-                  <button class="page-sorting__filter-button" aria-label="по убыванию"> </button>
-                </li>
-                <li class="page-sorting__item">
-                  <button class="page-sorting__filter-button" aria-label="по возрастанию"> </button>
-                </li>
-              </ul>-->
             </section>
       <section class="page-catalog__main-catalog main-catalog">
         <h2 class="visually-hidden"> список шаблонов </h2>
@@ -239,20 +229,23 @@
     </section>
   </div>
 </div>
- <section class="contacts">
-    <h2 class="visually-hidden">Контакты</h2>
-     <div class="container">
-      <div class="contacts__container">
-          <h3>NЁRDS DESING STUDIO</h3>
-          <address  class="contacts__address">
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8<br>
-            <p>тел.<a class="contacts__tel" href="tel:+7812275-75-75"> +7 (812) 275-75-75</a></p>
-          </address>
-          <a class="contacts__button btn-style" href="#">
-            <span>Напишите нам</span>
-          </a>
+    </main>
+    <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="container">
+        <div class="contacts__container">
+        <h3>NЁRDS DESING STUDIO</h3>
+        <address  class="contacts__address">
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+          <p>тел.<a class="contacts__tel" href="tel:+7812275-75-75"> +7 (812) 275-75-75</a></p>
+        </address>
+        <a class="contacts__button btn-style" href="#">
+          <span>Напишите нам</span>
+        </a>
+        <div class="contacts__location"></div>
         <form class="appointment-form" method="post">
+          <h2>Hапишите нам</h2>
             <ul class="appointment-form__list">
               <li class="appointment-form__item">
                 <label for="appointment-name">Ваше имя:</label>
@@ -270,15 +263,13 @@
             <button class="appointment-form__button btn-style" type="submit">Отправить</button>
           </form>
         </div>
-            <a class="map-link" href="map.html">
-            <span class="visually-hidden"> Карта </span>
-           <!--<img src="img/2.png" alt="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">-->
-          </a>
-        </div>
-        </section>
-      </div>
-      <!--<div class="checkbox"></div>-->
-    </main>
+      </section>
+      <section>
+      <a class="map-link" href="map.html">
+        <span class="visually-hidden"> Карта </span>
+        <!--<img src="img/2.png" alt="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">-->
+      </a>
+    </section>
          <footer class="main-footer">
            <div class="container">
              <div class="footer-social">
