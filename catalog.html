@@ -46,10 +46,9 @@
         </div>
       </nav>
   </header>
-  <section>
-    <h1 class="page-catalog__title"> Магазин готовых шаблонов </h1>
-  </section>
-  <main class="page-catalog container">
+  <main>
+   <h1 class="page-catalog__title"> Магазин готовых шаблонов </h1>
+    <div class="page-catalog container">
       <div class="catalog-columns">
         <form class="page-catalog__form-filter form-filter" action="GET">
           <fieldset class="form-filter__block">
@@ -100,15 +99,11 @@
             <ul class="form-filter__list">
               <li class="form-filter__item">
                 <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="slider" id="filter-slider" checked>
-                <label class="form-filter__label" for="filter-slider">
-                  Слайдер
-                </label>
+                <label class="form-filter__label" for="filter-slider">Слайдер</label>
               </li>
               <li class="form-filter__item">
                 <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="benifits-block" id="filter-benefits-block" disabled>
-                  <label class="form-filter__label" for="filter-benefits-block">
-                  Блок преимуществ
-                </label>
+                  <label class="form-filter__label" for="filter-benefits-block">Блок преимуществ</label>
               </li>
               <li class="form-filter__item">
                 <input class="visually-hidden form-filter__input  form-filter__input--checkbox" type="checkbox" name="news" id="filter-news" checked>
@@ -133,38 +128,49 @@
           <button class="page-catalog__button btn-style" type="submit">Показать</button>
         </form>
         <div class="page-catalog__content">
-        <section class="page-catalog__page-sorting page-sorting">
-          <div>
-            <h2>Сортировать:</h2>
-          </div>
-            <div class="form-filter__sorting">
-                  <label class="form-filter__label" for="price" name="filter">
-                    <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="price" id="price"  checked>по цене
+        <fieldset class="page-catalog__page-sorting page-sorting">
+            <div class="page-sorting__block">
+            <legend>Сортировать:</legend>
+            <ul class="page-sorting__list">
+              <li class="page-sorting__item">
+                <input class="visually-hidden" type="checkbox" name="price" id="price"  checked>
+                  <label  for="price" name="filter">
+                   по цене
                   </label>
-                  <label class="form-filter__label" for="type" name="filter">
-                      <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="type" id="type" checked>по типу
+                </li>
+                <li class="page-sorting__item">
+                  <input class="visually-hidden" type="checkbox" name="type" id="type" checked>
+                  <label for="type" name="filter">
+                     по типу
                   </label>
-                  <label class="form-filter__label" for="name" name="filter">
-                      <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="name" id="name" checked>по названию
+                </li>
+                <li class="page-sorting__item">
+                  <input class="visually-hidden" type="checkbox" name="name" id="name" checked>
+                  <label for="name" name="filter">
+                      по названию
                   </label>
-            </div>
-            <div class="form-filter__sorting">
+                </li>
+            </ul>
+            <ul class="page-sorting__list">
+              <li class="page-sorting__item">
+                <input class="visually-hidden" type="checkbox" name="down" id="down" checked>
                   <label for="down" name="down">
-                      <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="down" id="down" checked>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                         <path fill="#231F20" d="M5.5 10L0 0h11"/>
                     </svg>
                   </label>
-                  <label  for="up" name="up">
-                      <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="up" id="up" checked>
+                </li>
+                <li class="page-sorting__item">
+                  <input class="visually-hidden" type="checkbox" name="up" id="up" checked>
+                  <label for="up" name="up">
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                         <path fill="#231F20" d="M5.5 0L0 10h11z"/>
                       </svg>
-
-
                   </label>
+                </li>
+              </ul>
             </div>
-            </section>
+        </fieldset>
       <section class="page-catalog__main-catalog main-catalog">
         <h2 class="visually-hidden"> список шаблонов </h2>
         <ul class="main-catalog__list">
