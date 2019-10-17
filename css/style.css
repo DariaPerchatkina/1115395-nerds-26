@@ -95,7 +95,6 @@ input[type="radio"].visually-hidden {
 .slider__list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -222,8 +221,11 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   align-items:  center;
-  width: 550px;
+  /* width: 550px; */
   padding: 0;
+  padding-bottom: 30px;
+  /* padding-right: 25px; */
+  padding-left: 35px;
   list-style: none;
 }
 
@@ -259,9 +261,8 @@ input[type="radio"].visually-hidden {
 
 .user-navigation {
   display: flex;
-  width: 160px;
-
-  padding: 0;
+  /* width: 160px; */
+  padding-bottom: 30px;
   list-style: none;
 }
 
@@ -297,7 +298,7 @@ input[type="radio"].visually-hidden {
   background-color: white;
   position: absolute;
   top: 55px;
-  
+
 }
 
 .main-navigation__wrapper .container {
@@ -486,7 +487,7 @@ input[type="radio"].visually-hidden {
 
 .appointment-form {
   display: none;
-  
+
   flex-direction: column;
   flex-wrap: wrap;
   align-items: stretch;
@@ -779,21 +780,21 @@ input[type="radio"].visually-hidden {
 
 .partners__list {
   display: flex;
-  
+
   width: auto;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 -58px;
   margin-top: -10px;
-  
+
   list-style: none;
   overflow: hidden;
 }
-  
+
 
 .partners__item {
   position: relative;
-  
+
   min-width: 200px;
   margin-right: 58px;
   margin-left: 58px;
