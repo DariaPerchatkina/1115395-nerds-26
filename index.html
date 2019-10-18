@@ -187,30 +187,32 @@
       <span>Напишите нам</span>
     </a>
     <div class="contacts__location"></div>
+    <section class="modal appointment__modal">
     <form class="appointment-form" method="post">
+      <div class="appointment-form__container">
       <h2>Hапишите нам</h2>
         <ul class="appointment-form__list">
           <li class="appointment-form__item">
-            <label for="appointment-name">Ваше имя:</label>
+            <label class="appointment-form__label" for="appointment-name">Ваше имя:</label>
             <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
           </li>
           <li class="appointment-form__item">
-            <label for="appointment-email">Ваш e-mail:</label>
+            <label class="appointment-form__label" for="appointment-email">Ваш e-mail:</label>
             <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
           </li>
           <li class="appointment-form__item">
-            <label for="appointment-text">Текст письма:</label>
-            <textarea id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме"></textarea>
+            <label class="appointment-form__label" for="appointment-text">Текст письма:</label>
+            <textarea class="appointment-form__textarea" id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме"></textarea>
           </li>
         </ul>
         <button class="appointment-form__button btn-style" type="submit">Отправить</button>
+      </div>
       </form>
     </div>
   </section>
   <section>
   <a class="map-link" href="map.html">
     <span class="visually-hidden"> Карта </span>
-    <!--<img src="img/2.png" alt="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">-->
   </a>
 </section>
     <footer class="main-footer">

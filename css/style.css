@@ -221,12 +221,13 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   align-items:  center;
-  /* width: 550px; */
   padding: 0;
   padding-bottom: 30px;
-  /* padding-right: 25px; */
-  padding-left: 35px;
+  padding-right: 5px;
+  padding-left: 45px;
   list-style: none;
+
+  line-height: 1.88;
 }
 
 .site-navigation__link {
@@ -293,12 +294,11 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  min-height: 308px;
+  height: 308px;
   width: 319px;
   background-color: white;
   position: absolute;
   top: 55px;
-
 }
 
 .main-navigation__wrapper .container {
@@ -485,20 +485,87 @@ input[type="radio"].visually-hidden {
   width: 650px;
 }
 
-.appointment-form {
-  display: none;
+.modal {
+  display: block;
+  position: fixed;
 
-  flex-direction: column;
+}
+
+.modal-appointment {
+  background-color: #ffffff;
+  top: 0px;
+  right: 65.5%;
+}
+
+.appointment-form__container {
+  max-width: 960px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+.appointment-form {
+  display: flex;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   align-items: stretch;
+  max-width: 960px;
   margin: 0;
-  padding: 20px;
+  padding: 70px;
+  /* padding-left: 101px; */
+  /* padding-bottom: 120px; */
+  /* padding-right: 100px; */
   list-style: none;
   background: #ffffff;
+  position: absolute;
+  z-index: 3;
+  top: -195px;
+  right: -743px;
+  /* width: 960px; */
+  /* min-height: 590px; */
+  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+.appointment-form h2 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: left;
 }
 
 .appointment-form__list {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: stretch;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  /* padding-top: 49px; */
+  /* padding-bottom: 27px; */
+  /* padding-left: 100px; */
+  /* padding-right: 100px; */
   list-style: none;
+  /* box-sizing: border-box; */
+}
+
+.appointment-form__item {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  /* width: 360px; */
+  /* margin-right: 40px; */
+  min-height: 50px;
+}
+
+.appointment-form__label {
+  padding-bottom: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.13;
+  margin-top: 36px;
 }
 
 .appointment-form__item input[type="text"],
@@ -509,14 +576,16 @@ input[type="radio"].visually-hidden {
   width: 360px;
   height: 50px;
   padding: 0 16px;
-
   border: solid 2px #d7dcde;
   background-color: #ffffff;
   border-radius: 2px;
   opacity: 0.5;
   color: rgba(68, 68, 68, 0.5);
-
   outline:none;
+}
+
+.appointment-form__item:first-child input[type="text"] {
+  margin-right: 25px;
 }
 
 .appointment-form__item input:focus {
@@ -528,11 +597,29 @@ input[type="radio"].visually-hidden {
   border: solid 2px #b4b9bb;
 }
 
+.appointment-form__textarea {
+  margin: 0px;
+  width: 760px;
+  min-height: 118px;
+  box-sizing: border-box;
+  min-width: 760px;
+  font: inherit;
+  width: 360px;
+  height: 50px;
+  padding: 0 16px;
+  border: solid 2px #d7dcde;
+  background-color: #ffffff;
+  border-radius: 2px;
+  opacity: 0.5;
+  color: rgba(68, 68, 68, 0.5);
+  outline: none;
+}
+
 .appointment-form__button{
   width: 260px;
   height: 50px;
-
   background-color: #fb565a;
+  /* margin-bottom: 87px; */
 }
 
 .appointment-form__button:hover{
@@ -710,6 +797,8 @@ input[type="radio"].visually-hidden {
   border-style: none;
   border-radius: 3px;
   outline: inherit;
+  margin-top: 47px;
+  /* margin-bottom: 87px; */
 }
 
 .page-index__button:hover{
@@ -1276,8 +1365,8 @@ input[type="radio"].visually-hidden {
 
 
 .form-filter__label{
-  color: 
-} 
+  color:
+}
 
 
 .form-filter__label::before {
@@ -1465,9 +1554,4 @@ input[type="radio"].visually-hidden {
 
 .map-link {
   position: relative;
-
-}
-
-.modal {
-  display: none;
 }
