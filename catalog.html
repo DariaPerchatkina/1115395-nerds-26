@@ -81,7 +81,7 @@
                </label>
               </li>
               <li class="form-filter__item">
-                <input class="visually-hidden form-filter__input  form-filter__input--radio" type="radio" name="grid" value="fixed" id="filter-fixed" disabled>
+                <input class="visually-hidden form-filter__input  form-filter__input--radio" type="radio" name="grid" value="fixed" id="filter-fixed" >
                 <label class="form-filter__label" for="filter-fixed">
                     Фиксированная
                 </label>
@@ -102,7 +102,7 @@
                 <label class="form-filter__label" for="filter-slider">Слайдер</label>
               </li>
               <li class="form-filter__item">
-                <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="benifits-block" id="filter-benefits-block" disabled>
+                <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="benifits-block" id="filter-benefits-block" >
                   <label class="form-filter__label" for="filter-benefits-block">Блок преимуществ</label>
               </li>
               <li class="form-filter__item">
@@ -128,31 +128,32 @@
           <button class="page-catalog__button btn-style" type="submit">Показать</button>
         </form>
         <div class="page-catalog__content">
-        <fieldset class="page-catalog__page-sorting page-sorting">
-            <div class="page-sorting__block">
+        <form class="page-catalog__content-form content-form" action="GET">
+        <fieldset class="content-form__block">
+            <div class="content-form__container">
             <legend>Сортировать:</legend>
-            <ul class="page-sorting__list">
-              <li class="page-sorting__item">
+            <ul class="content-form__list">
+              <li class="content-form__item">
                 <input class="visually-hidden" type="checkbox" name="price" id="price"  checked>
                   <label  for="price" name="filter">
                    по цене
                   </label>
                 </li>
-                <li class="page-sorting__item">
+                <li class="content-form__item">
                   <input class="visually-hidden" type="checkbox" name="type" id="type" checked>
                   <label for="type" name="filter">
                      по типу
                   </label>
                 </li>
-                <li class="page-sorting__item">
+                <li class="content-form__item">
                   <input class="visually-hidden" type="checkbox" name="name" id="name" checked>
                   <label for="name" name="filter">
                       по названию
                   </label>
                 </li>
             </ul>
-            <ul class="page-sorting__list">
-              <li class="page-sorting__item">
+            <ul class="content-form__list">
+              <li class="content-form__item">
                 <input class="visually-hidden" type="checkbox" name="down" id="down" checked>
                   <label for="down" name="down">
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
@@ -160,7 +161,7 @@
                     </svg>
                   </label>
                 </li>
-                <li class="page-sorting__item">
+                <li class="content-form__item">
                   <input class="visually-hidden" type="checkbox" name="up" id="up" checked>
                   <label for="up" name="up">
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
@@ -171,6 +172,7 @@
               </ul>
             </div>
         </fieldset>
+      </form>
       <section class="page-catalog__main-catalog main-catalog">
         <h2 class="visually-hidden"> список шаблонов </h2>
         <ul class="main-catalog__list">
@@ -178,6 +180,11 @@
             <a class="main-catalog__link" href="#">
               <img class="main-catalog__img" src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Седона">
             </a>
+            <section class="main-catalog__modal modal-catalog">
+              <div class="modal-catalog__container">
+
+              </div>
+            </section>
           </li>
           <li class="main-catalog__item">
             <a class="main-catalog__link" href="#">

@@ -1234,6 +1234,24 @@ input[type="radio"].visually-hidden {
   opacity: 0.12;
 }
 
+.main-catalog__link:hover::before {
+  position: absolute;
+  top: -599px;
+  content: url("../img/svg-my-version/browser.svg");
+  padding: 0;
+  opacity: 1;
+}
+
+.modal-catalog__container{
+  position: absolute;
+  top:-400px;
+  display: flex;
+  width: 360px;
+  height: 261px;
+  z-index: 8;
+  background-color: #eeeeee;
+}
+
 .main-catalog__item:nth-child(2n) {
   margin-right: 0;
 }
@@ -1526,7 +1544,8 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.form-filter__input--radio + .form-filter__label::before {
+.form-filter__input--radio + .form-filter__label::before,
+.form-filter__input--radio + .form-filter__label::after {
   content: "";
   background-image: url("../img/svg-my-version/radio-off.svg");
   background-repeat: no-repeat;
@@ -1538,7 +1557,7 @@ input[type="radio"].visually-hidden {
   height: 25px;
 
   border-radius: 50%;
-  opacity: 0.25;
+  opacity: 0.4;
 }
 
 .form-filter__input--radio:checked:not(:disabled) + .form-filter__label::before {
@@ -1567,7 +1586,7 @@ input[type="radio"].visually-hidden {
   height: 25px;
 
   border-radius: 50%;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .form-filter__input--radio:disabled + .form-filter__label::before {
@@ -1600,6 +1619,51 @@ input[type="radio"].visually-hidden {
 
   border-radius: 50%;
   opacity: 1;
+}
+
+.page-catalog__content {
+  max-width: 760px;
+}
+
+.content-form__block {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+  border: none;
+  list-style-type: none;
+}
+
+.content-form__block legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.content-form__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 57px;
+}
+
+.content-form__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding-left: 25px;
+  line-height: 1.25;
+  list-style-type: none;
+}
+
+.content-form__item {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.29;
+  padding: 0 13px;
+  text-decoration: none;
+  align-items: center;
 }
 
 .inner-page .main-footer {
