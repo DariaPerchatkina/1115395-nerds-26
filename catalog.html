@@ -102,7 +102,7 @@
                 <label class="form-filter__label" for="filter-slider">Слайдер</label>
               </li>
               <li class="form-filter__item">
-                <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="benifits-block" id="filter-benefits-block" >
+                <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="benifits-block" id="filter-benefits-block" disabled >
                   <label class="form-filter__label" for="filter-benefits-block">Блок преимуществ</label>
               </li>
               <li class="form-filter__item">
@@ -134,36 +134,36 @@
             <legend>Сортировать:</legend>
             <ul class="content-form__list">
               <li class="content-form__item">
-                <input class="visually-hidden" type="checkbox" name="price" id="price"  checked>
-                  <label  for="price" name="filter">
+                <input class="visually-hidden content-form__input content-form__input--checkbox" type="checkbox" name="price" id="price" >
+                  <label class="content-form__label" for="price" name="filter">
                    по цене
                   </label>
                 </li>
                 <li class="content-form__item">
-                  <input class="visually-hidden" type="checkbox" name="type" id="type" checked>
-                  <label for="type" name="filter">
+                  <input class="visually-hidden content-form__input content-form__input--checkbox" type="checkbox" name="type" id="type" >
+                  <label  class="content-form__label" for="type" name="filter">
                      по типу
                   </label>
                 </li>
                 <li class="content-form__item">
-                  <input class="visually-hidden" type="checkbox" name="name" id="name" checked>
-                  <label for="name" name="filter">
+                  <input class="visually-hidden content-form__input content-form__input--checkbox" type="checkbox" name="name" id="name" >
+                  <label  class="content-form__label" for="name" name="filter">
                       по названию
                   </label>
                 </li>
             </ul>
             <ul class="content-form__list">
               <li class="content-form__item">
-                <input class="visually-hidden" type="checkbox" name="down" id="down" checked>
-                  <label for="down" name="down">
+                <input class="visually-hidden content-form__input content-form__input--checkbox" type="checkbox" name="down" id="down">
+                  <label  class="content-form__label" for="down" name="down">
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                         <path fill="#231F20" d="M5.5 10L0 0h11"/>
                     </svg>
                   </label>
                 </li>
                 <li class="content-form__item">
-                  <input class="visually-hidden" type="checkbox" name="up" id="up" checked>
-                  <label for="up" name="up">
+                  <input class="visually-hidden content-form__input content-form__input--checkbox" type="checkbox" name="up" id="up" >
+                  <label  class="content-form__label" for="up" name="up">
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                         <path fill="#231F20" d="M5.5 0L0 10h11z"/>
                       </svg>
@@ -177,36 +177,79 @@
         <h2 class="visually-hidden"> список шаблонов </h2>
         <ul class="main-catalog__list">
           <li class="main-catalog__item">
+            <span class="main-catalog__modal"> 
+              <h3>Sedona</h3>
+              <p>Информационный сайт<br>
+                 для туристов</p>
+              <a class="main-catalog__button button" href="#">
+                <span>9900 руб.</span>
+              </a>
+            </span>
             <a class="main-catalog__link" href="#">
               <img class="main-catalog__img" src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Седона">
             </a>
-            <section class="main-catalog__modal modal-catalog">
-              <div class="modal-catalog__container">
-
-              </div>
-            </section>
           </li>
           <li class="main-catalog__item">
+            <span class="main-catalog__modal">
+              <h3>Pink App</h3>
+              <p>Продуктовый лендинг<br>
+                 приложения для iOS и Android</p>
+              <a class="main-catalog__button button" href="#">
+                  <span>9900 руб.</span>
+              </a>
+            </span>
             <a class="main-catalog__link" href="#">
               <img class="main-catalog__img" src="img/img-pink-jpg.jpg" width="360" height="576" alt="Пинк">
             </a>
           </li>
           <li class="main-catalog__item">
+            <span class="main-catalog__modal">
+              <h3>Barbershop</h3>
+              <p>Сайт салона красоты.<br>
+                 Для мужчин, да.</p>
+              <a class="main-catalog__button button" href="#">
+                  <span>9900 руб.</span>
+              </a>
+            </span>
             <a class="main-catalog__link" href="#">
               <img class="main-catalog__img" src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="Бородинский">
             </a>
           </li>
           <li class="main-catalog__item">
+            <span class="main-catalog__modal">
+              <h3>MISHKA</h3>
+              <p>Интернет-магазин<br>
+                 вязаных игрушек</p>
+              <a class="main-catalog__button button" href="#">
+                  <span>9900 руб.</span>
+              </a>
+            </span>
             <a class="main-catalog__link" href="#">
               <img class="main-catalog__img" src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Мишка">
             </a>
           </li>
           <li class="main-catalog__item">
+            <span class="main-catalog__modal">
+              <h3>A Plus</h3>
+              <p>Лендинг курсов повышения<br>
+                квалификации</p>
+              <a class="main-catalog__button button" href="#">
+                  <span>9900 руб.</span>
+              </a>
+            </span>
             <a class="main-catalog__link" href="#">
               <img class="main-catalog__img" src="img/img-aplus-jpg.jpg" width="360" height="576" alt="А+">
             </a>
           </li>
           <li class="main-catalog__item">
+            <span class="main-catalog__modal">
+              <h3>КВАСТ</h3>  
+              <p>Промо-сайт производителя<br>
+                 крафтового кваса</p>
+              <a class="main-catalog__button button" href="#">
+                  <span>9900 руб.</span>
+              </a>
+            </span>
             <a class="main-catalog__link" href="#">
               <img class="main-catalog__img" src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Кваст">
             </a>
