@@ -227,7 +227,7 @@ input[type="radio"].visually-hidden {
   padding-left: 50px;
   list-style: none;
   margin-top: 31px;
-  line-height: 1.88;
+  line-height: 20px;
 }
 
 .site-navigation__link {
@@ -455,6 +455,9 @@ input[type="radio"].visually-hidden {
 
 .advantages__item {
   padding-right: 0px;
+  margin-top: 2px;
+  margin-bottom: -1px;
+
   line-height: 18px;
 }
 
@@ -972,13 +975,12 @@ input[type="radio"].visually-hidden {
   padding-left: 30px;
   padding-right: 30px;
   margin: 0 -58px;
-  margin-top: -10px;
+  margin-top: -23px;
   list-style: none;
   overflow: hidden;
 }
 
 .partners__item {
-  position: relative;
   min-width: 200px;
   margin-right: 55px;
   margin-left: 55px;
@@ -1005,10 +1007,15 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
 }
 
+.partners__link {
+
+}
+
 .directions__list {
   /* width: 616px; */
   list-style: none;
   /* margin-bottom: 30px; */
+  line-height: 1.5;
 }
 
 .directions__item {
