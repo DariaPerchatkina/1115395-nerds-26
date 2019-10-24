@@ -300,10 +300,14 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 }
 
+.container__map {
+  position: relative;
+}
+
 .contacts__container {
   position: absolute;
-  top: 53px;
-  left: 736px;
+  top: -158px;
+  left: 25px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1105,12 +1109,13 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
 .contacts__location {
   position: absolute;
-  top: 89px;
-  left: 1415px;
+  top: 37px;
+  left: 680px;
   width: 231px;
   height: 190px;
   background-image: url("../img/map-marker.png");
@@ -1160,6 +1165,10 @@ input[type="radio"].visually-hidden {
   background-color: #d7373b;
 }
 
+.map-link {
+  position: relative;
+}
+
 .main-footer {
   min-height: 148px;
 }
@@ -1197,10 +1206,11 @@ input[type="radio"].visually-hidden {
 
 .page-catalog__title{
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 52px;
   padding: 0;
-  padding-top: 82px;
-  padding-bottom: 116px;
+  padding-top: 85px;
+  padding-left: 8px;
+  padding-bottom: 124px;
   font-style: normal;
   background-color: #eeeeee;
 
@@ -1242,10 +1252,15 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
 }
 
-.main-catalog .main-catalog__list,
-.main-catalog .main-catalog__item {
+.main-catalog__list,
+.main-catalog__item {
   padding: 0;
   list-style-type: none;
+}
+
+.main-catalog__link {
+  position: relative;
+  top: 40px;
 }
 
 .catalog-columns {
@@ -1263,6 +1278,59 @@ input[type="radio"].visually-hidden {
   min-height: 576px;
 }
 
+.main-catalog__link::before {
+  content: url("../img/svg-my-version/browser.svg");
+  width: 358px;
+  position: absolute;
+  bottom: 575px;
+  align-items: center;
+  opacity: 0.12;
+}
+
+.main-catalog__link::after {
+  content: "";
+  position: absolute;
+  bottom:0;
+  left: 0;
+  width: 362px;
+  height: 231px;
+  background-color: #eeeeee;
+  z-index: 10;
+  text-align: center;
+  padding-top:35px;
+  display: none;
+  box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.2);
+}
+
+.main-catalog__link:hover::before {
+  content: url("../img/svg-my-version/browser.svg");
+  width: 360px;
+  position: absolute;
+  bottom: 574px;
+  align-items: center;
+  opacity: 1;
+}
+
+.main-catalog__link:hover::after + .main-catalog__modal {
+  display: inline-block;
+  box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.2);
+}
+
+.main-catalog__modal {
+  position: absolute;
+  bottom: -35px;
+  left:0;
+  width: 100%;
+  height: 231px;
+  background-color: #eeeeee;
+  z-index: 10;
+  text-align: center;
+  padding-top:35px;
+
+}
+
+
+/*
 .main-catalog__item::before {
   content: url("../img/svg-my-version/browser.svg");
   position: absolute;
@@ -1293,10 +1361,6 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.main-catalog__item:hover .main-catalog__modal {
-  opacity: 1;
-  box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.2);
-}
 
 .main-catalog__modal {
   position: absolute;
@@ -1384,7 +1448,7 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
 }
-
+*/
 .main-catalog__item:nth-child(2n) {
   margin-right: 0;
 }
@@ -1395,10 +1459,11 @@ input[type="radio"].visually-hidden {
 
   padding: 0;
   margin: 0;
-  /*margin-bottom: 60px;*/
+  margin-bottom: 60px;
 
-  list-style: none;
+ list-style: none;
 }
+
 
 .inner-page .main-footer {
   margin-top: 60px;
@@ -1452,19 +1517,25 @@ input[type="radio"].visually-hidden {
 .form-filter__block {
   padding: 0;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   border: none;
   list-style-type: none;
 }
 
 .form-filter__range-filter {
   width: 260px;
-  margin-top: 36px;
+  margin-top: 27px;
+  margin-left: 6px;
 }
 
 .form-filter__block legend {
+  margin-left: 5px;
+  padding-top: 3px;
+
   font-size: 18px;
   line-height: 24px;
+  line-height: 1.67;
+  letter-spacing: 0.18px;
 }
 
 .form-filter__range-controls {
@@ -1554,6 +1625,8 @@ input[type="radio"].visually-hidden {
 
 .form-filter__item .form-filter__label {
   position: relative;
+  bottom: 6px;
+  right: 8px;
 
   display: block;
 
@@ -1603,8 +1676,8 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/svg-my-version/radio-off.svg");
   background-repeat: no-repeat;
   position: absolute;
-  left: -42px;
-  top: -2px;
+  left: -28px;
+  top: -8px;
 
   width: 25px;
   height: 25px;
@@ -1617,7 +1690,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/svg-my-version/radio-on.svg");
   background-repeat: no-repeat;
   position: absolute;
-  left: -42px;
+  left: -28px;
   top: -2px;
 
   width: 25px;
