@@ -50,6 +50,7 @@
     <h1 class="page-catalog__title">Магазин готовых шаблонов</h1>
     <div class="page-catalog container">
       <div class="catalog-columns">
+       <section class="filters">
         <form class="page-catalog__form-filter form-filter" action="GET">
           <fieldset class="form-filter__block">
             <legend>Стоимость:</legend>
@@ -72,7 +73,7 @@
             </div>
           </fieldset>
           <fieldset class="form-filter__block">
-            <legend>Сетка:</legend>
+            <legend class="form-filter__legend">Сетка:</legend>
             <ul class="form-filter__list">
               <li class="form-filter__item">
                 <input class="visually-hidden form-filter__input form-filter__input--radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
@@ -95,7 +96,7 @@
             </ul>
           </fieldset>
           <fieldset class="form-filter__block">
-            <legend>Особенности</legend>
+            <legend class="form-filter__legend">Особенности</legend>
             <ul class="form-filter__list">
               <li class="form-filter__item">
                 <input class="visually-hidden form-filter__input form-filter__input--checkbox" type="checkbox" name="slider" id="filter-slider" checked>
@@ -127,6 +128,7 @@
           </fieldset>
           <button class="page-catalog__button btn-style" type="submit">Показать</button>
         </form>
+      </section>
         <div class="page-catalog__content">
           <div class="page-catalog__container">
             <h3>Сортировать</h3>
@@ -144,84 +146,90 @@
               <h2 class="visually-hidden"> список шаблонов </h2>
               <ul class="main-catalog__list">
                 <li class="main-catalog__item">
-                  <div class="main-catalog__modal">
-                      <a class="main-catalog__link" href="#" tabindex="1">
+                  <!--<div class="main-catalog__modal">-->
+                    <a class="main-catalog__link" href="#" >
                         <h3>Sedona</h3>
-                      </a>
-                      <p>Информационный сайт
-                        для туристов</p>
+                    </a>
+                      <p>Информационный сайт для туристов</p>
                         <a class="main-catalog__button" href="#">
                           <span>9 900 руб.</span>
                         </a>
-                  </div>
-                  <img class="main-catalog__img" src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Седона">
-                    <a class="main-catalog__link" href="#">
-                    </a>
+                  <!--</div>-->
+                  <p class="main-catalog__img">
+                    <img class="main-catalog__img" src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Седона">
+                  </p>
                   </li>
                   <li class="main-catalog__item">
                     <div class="main-catalog__modal">
-                      <a class="main-catalog__link" href="#"  tabindex="2">
+                      <a class="main-catalog__link" href="#">
                         <h3>Pink App</h3>
+                        <p>Продуктовый лендинг приложения для iOS и Android</p>
                       </a>
-                      <p>Продуктовый лендинг
-                        приложения для iOS и Android</p>
-                        <a class="main-catalog__button" href="#">
-                          <span>9 900 руб.</span>
-                        </a>
-                      </div>
-                          <img class="main-catalog__img" src="img/img-pink-jpg.jpg" width="360" height="576" alt="Пинк">
-                    </li>
-                    <li class="main-catalog__item">
-                      <div class="main-catalog__modal">
-                        <a class="main-catalog__link" href="#"  tabindex="3">
-                          <h3>Barbershop</h3>
-                        </a>
-                        <p>Сайт салона красоты.
-                          Для мужчин, да.</p>
+                        <p class="main-catalog__price">
                           <a class="main-catalog__button" href="#">
                             <span>9 900 руб.</span>
                           </a>
+                        </p>
+                      </div>
+                      <p class="main-catalog__img">
+                      <img class="main-catalog__img" src="img/img-pink-jpg.jpg" width="360" height="576" alt="Пинк">
+                      </p>
+                    </li>
+                    <li class="main-catalog__item">
+                      <div class="main-catalog__modal">
+                        <a class="main-catalog__link" href="#">
+                          <h3>Barbershop</h3>
+                          <p>Сайт салона красоты. Для мужчин, да.</p>
+                        </a>
+                          <p class="main-catalog__price">
+                            <a class="main-catalog__button" href="#">
+                              <span>9 900 руб.</span>
+                            </a>
+                          </p>
                         </div>
                         <img class="main-catalog__img" src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="Бородинский">
                       </li>
                       <li class="main-catalog__item">
-                        <div class="main-catalog__modal">
-                          <a class="main-catalog__link" href="#"  tabindex="4">
+                        <a class="main-catalog__link" href="#">
+                          <div class="main-catalog__modal">
                             <h3>MISHKA</h3>
+                            <p>Интернет-магазин вязаных игрушек</p>
+                          </div>
                           </a>
-                          <p>Интернет-магазин
-                            вязаных игрушек</p>
+                          <p class="main-catalog__price">
                             <a class="main-catalog__button " href="#">
                               <span>9 900 руб.</span>
                             </a>
-                          </div>
-                          <img class="main-catalog__img" src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Мишка">
+                          </p>
+                        <img class="main-catalog__img" src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Мишка">
                         </li>
                         <li class="main-catalog__item">
-                            <img class="main-catalog__img" src="img/img-aplus-jpg.jpg" width="360" height="576" alt="А+">
-                            <div class="main-catalog__modal">
-                            <a class="main-catalog__link" href="#"  tabindex="5">
+                          <div class="main-catalog__modal">
+                            <a class="main-catalog__link" href="#">
                               <h3>A Plus</h3>
+                              <p>Лендинг курсов повышения квалификации</p>
                             </a>
-                              <p>Лендинг курсов повышения
-                                квалификации</p>
-                                <a class="main-catalog__button" href="#">
-                                  <span>9 900 руб.</span>
-                                </a>
-                              </div>
+                            <p class="main-catalog__price">
+                              <a class="main-catalog__button" href="#">
+                                <span>9 900 руб.</span>
+                              </a>
+                            </p>
+                          </div>
+                          <img class="main-catalog__img" src="img/img-aplus-jpg.jpg" width="360" height="576" alt="А+">
                           </li>
                           <li class="main-catalog__item">
                             <div class="main-catalog__modal">
-                              <a class="main-catalog__link" href="#"  tabindex="6">
+                              <a class="main-catalog__link" href="#">
                                 <h3>КВАСТ</h3>
+                                <p>Промо-сайт производителя крафтового кваса</p>
                               </a>
-                              <p>Промо-сайт производителя
-                                крафтового кваса</p>
+                              <p class="main-catalog__price">
                                 <a class="main-catalog__button" href="#">
                                   <span>9 900 руб.</span>
                                 </a>
-                              </div>
-                              <img class="main-catalog__img" src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Кваст">
+                              </p>
+                            </div>
+                            <img class="main-catalog__img" src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Кваст">
                             </li>
                           </ul>
                           <ul class="pagination-list">
@@ -284,11 +292,9 @@
                                 <label class="appointment-form__label" for="appointment-email">Ваш e-mail:</label>
                                 <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
                               </li>
-                              <li class="appointment-form__item">
+                            </ul>
                                 <p>Текст письма:</p>
                                 <textarea class="appointment-form__textarea" rows="4" cols="6" name="text"  placeholder="В свободной форме"></textarea>
-                              </li>
-                            </ul>
                             <button class="appointment-form__button btn-style" type="submit">Отправить</button>
                           </div>
                         </form>
