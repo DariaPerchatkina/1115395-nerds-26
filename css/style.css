@@ -47,7 +47,6 @@ input[type="radio"].visually-hidden {
 
 .slider {
   position: relative;
-  /* margin-bottom: 45px; */
   margin-top: 12px;
   background-color: #eeeeee;
 }
@@ -72,7 +71,6 @@ input[type="radio"].visually-hidden {
   padding: 18px;
   border-radius: 50%;
   cursor: pointer;
-
 }
 
 .slider__controls .slider__controls-item::after {
@@ -225,10 +223,16 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items:  center;
-  padding-left: 50px;
+  padding-left: 44px;
   list-style: none;
-  margin-top: 31px;
+  margin-top: 30px;
   line-height: 20px;
+  margin-right: -13px;
+  margin-right: 1px;
+}
+
+.site-navigation__main {
+  padding-left: 67px;
 }
 
 .site-navigation__link {
@@ -256,32 +260,30 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
-
   text-decoration: none;
-
+  margin-left: 5px;
 }
 
 .user-navigation__link::before {
   content: url("../img/svg-my-version/basket-icon.svg");
-  padding-right: 21px;
-  /* padding-top: 1px; */
+  padding-right: 17px;
   opacity: 0.3;
 }
 
 .user-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   list-style: none;
   margin-top: 28px;
+  margin-left: 11px;
 }
 
 .user-navigation__item {
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-left: 38px;
-  padding-right: 0px;
+  padding-left: 42px;
+  padding-right: -5px;
 }
 
 .main-navigation__wrapper{
@@ -356,7 +358,6 @@ input[type="radio"].visually-hidden {
 }
 
 .projects {
-
   padding-bottom: 63px;
   margin-right: 10px;
   margin-left: 10px;
@@ -417,24 +418,23 @@ input[type="radio"].visually-hidden {
 }
 
 .advanteges {
-     display: flex;
-    flex-wrap: wrap;
-    width: 360px;
-    min-height: 409px;
-    text-align: right;
-    padding-top: 230px;
-    padding-left: 0px;
-    background-image: url(../img/nerds-picture.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-position-x: 5px;
-    background-position-y: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
+  min-height: 409px;
+  text-align: right;
+  padding-top: 230px;
+  padding-left: 0px;
+  background-image: url("../img/nerds-picture.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-position-x: 5px;
+  background-position-y: 2px;
 }
 
 .advanteges__list {
   display: flex;
 
-  /* flex-wrap: wrap; */
   list-style: none;
 }
 
@@ -507,15 +507,14 @@ input[type="radio"].visually-hidden {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
-
   color: #000000;
+  letter-spacing: normal;
 }
 
 .directions p {
   width: 616px;
   margin-top: -5px;
   margin-bottom: 40px;
-  /* line-height: 33px; */
 }
 
 .directions__block {
@@ -567,7 +566,6 @@ input[type="radio"].visually-hidden {
 
   background-color:  #e74246;
   opacity: 0.4;
-
 }
 
 .modal-close:hover::before,
@@ -600,7 +598,6 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   line-height: 1.13;
   margin-top: 36px;
-
 }
 
 .appointment-form {
@@ -765,18 +762,13 @@ input[type="radio"].visually-hidden {
   align-items: center;
   background-color: #e1e1e1;
   border-radius: 60px;
-  /* padding-left: 10px; */
-  /* padding-right: 10px; */
   padding-top: -10px;
 }
 
 .footer-sentence{
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  /* margin: 0; */
   padding: 0;
-  /* margin-bottom: 64px; */
 }
 
 .footer-sentence p {
@@ -786,6 +778,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   margin-top: 12px;
   margin-bottom: 12px;
+  letter-spacing: 0.1px;
 }
 
 .footer-sentence span {
@@ -794,7 +787,6 @@ input[type="radio"].visually-hidden {
   font-style: normal;
   text-align: left;
   color: #444444;
-  /* margin-top: -23px; */
 }
 
 .footer-social__link:hover,
@@ -923,8 +915,6 @@ input[type="radio"].visually-hidden {
   border-style: none;
   border-radius: 3px;
   outline: inherit;
-  /* margin-top: 47px;
-  /* margin-bottom: 87px; */
 }
 
 .page-index__button:hover{
@@ -1022,7 +1012,6 @@ input[type="radio"].visually-hidden {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-
 .partners__item:focus,
 .partners__item:hover {
   opacity: 1;
@@ -1041,9 +1030,8 @@ input[type="radio"].visually-hidden {
 }
 
 .directions__list {
-  /* width: 616px; */
   list-style: none;
-  /* margin-bottom: 30px; */
+
   line-height: 1.5;
 }
 
@@ -1130,8 +1118,9 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts h3 {
-  margin-top: 9px;
-  margin-bottom: 32px;
+  margin-top: 10px;
+  margin-bottom: 28px;
+  margin-left: 2px;
   font-size: 18px;
   font-weight: bold;
 }
@@ -1140,6 +1129,12 @@ input[type="radio"].visually-hidden {
   font-style: normal;
   color: #666666;
   margin-bottom: 11px;
+  margin-left: 4px;
+}
+
+.contacts p {
+  margin-left: 1px;
+  margin-top: 18px;
 }
 
 .contacts__tel {
@@ -1200,6 +1195,7 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   min-height: 81px;
   background-color: #eeeeee;
+  /* margin-top: 35px; */
 }
 
 .main-page .main-navigation {
@@ -1273,7 +1269,7 @@ input[type="radio"].visually-hidden {
   margin: 0px;
   margin-left: 5px;
   margin-right: -5px;
-  margin-bottom: 22px; 
+  margin-bottom: 22px;
   list-style: none;
 }
 
@@ -1358,22 +1354,18 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   text-align: center;
   color: #666666;
-  /* margin: 10px 5px 10px 5px; */
-  /* padding: 10px 15px 10px 15px; */
   overflow: hidden;
 }
 
 .catalog-modal__container {
-  display: flex;
-  flex-wrap: wrap;
-  min-width: 155px;
-  min-height: 34px;
+  padding: 0 32px;
 }
+
 .catalog-modal__button {
   min-width: 200px;
   min-height: 50px;
   padding: 10px 15px;
-  margin-top: 7px;
+  margin-top: 12px;
   white-space: nowrap;
   background-color: #fb565a;
   border-style: none;
@@ -1392,7 +1384,8 @@ input[type="radio"].visually-hidden {
   display:block;
   margin: auto;
   margin: 0 15px;
-
+  font-size: 16px;
+  text-transform: uppercase;
 
   font-weight: 400;
   color: #ffffff;
@@ -1429,12 +1422,10 @@ input[type="radio"].visually-hidden {
   align-items: center;
   justify-content: center;
   padding: 10px 15px;
-  margin-top: 27px;
+  margin-top: 23px;
   margin-left: 5px;
-  
   width: 260px;
   height: 50px;
-  
   vertical-align: middle;
   text-transform: uppercase;
   color: #000000;
@@ -1455,14 +1446,14 @@ input[type="radio"].visually-hidden {
 
 .form-filter__block {
   padding: 0;
-  margin: 0;
-  margin-bottom: 21px;
+  margin: -1px;
+  margin-bottom: 19px;
   border: none;
   list-style-type: none;
 }
 
 .form-filter__block:first-child {
-  margin-bottom: 52px;
+  margin-bottom: 54px;
 }
 
 .form-filter__range-filter {
@@ -1478,7 +1469,7 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 24px;
   line-height: 1.67;
-  letter-spacing: 0.18px;
+  letter-spacing: 0.7px;
 }
 
 .form-filter__range-controls {
@@ -1575,8 +1566,8 @@ input[type="radio"].visually-hidden {
 }
 
 .form-filter__list {
-  padding-left: 4px;
-  margin: 3px;
+  padding-left: 6px;
+  margin: 0px;
 
   line-height: 1.25;
   list-style-type: none;
@@ -1594,7 +1585,6 @@ input[type="radio"].visually-hidden {
 .form-filter__label{
   padding-left: 8px;
   color:  #283136;
-
 }
 
 .form-filter__label::before {
@@ -1615,28 +1605,28 @@ input[type="radio"].visually-hidden {
 
 .form-filter__input--radio + .form-filter__label::before {
   content: "";
-  background-image: url("../img/svg-my-version/radio-off.svg");
-  background-repeat: no-repeat;
   position: absolute;
   left: -26px;
   top:-2px;
 
   width: 25px;
   height: 25px;
+  background-image: url("../img/svg-my-version/radio-off.svg");
+  background-repeat: no-repeat;
 
   opacity: 0.4;
 }
 
 .form-filter__input--radio:checked + .form-filter__label::before {
   content: "";
-  background-image: url("../img/svg-my-version/radio-on.svg");
-  background-repeat: no-repeat;
   position: absolute;
   left: -26px;
   top: -2px;
 
   width: 25px;
   height: 25px;
+  background-image: url("../img/svg-my-version/radio-on.svg");
+  background-repeat: no-repeat;
 
 }
 
@@ -1660,27 +1650,27 @@ input[type="radio"].visually-hidden {
 
 .form-filter__input--checkbox + .form-filter__label::before {
   content: "";
-  background-image: url("../img/svg-my-version/checkbox-off.svg");
-  background-repeat: no-repeat;
   position: absolute;
   top: -1px;
   left: -26px;
 
   width: 27px;
   height: 23px;
+  background-image: url("../img/svg-my-version/checkbox-off.svg");
+  background-repeat: no-repeat;
   opacity: 0.4;
 
 }
 
 .form-filter__input--checkbox:checked + .form-filter__label::before {
   content: "";
-  background-image: url("../img/svg-my-version/checkbox-on.svg");
-  background-repeat: no-repeat;
   position: absolute;
   top: -1px;
   left: -26px;
   width: 29px;
   height: 23px;
+  background-image: url("../img/svg-my-version/checkbox-on.svg");
+  background-repeat: no-repeat;
 }
 
 .form-filter__input--checkbox:hover + .form-filter__label::before,
@@ -1732,7 +1722,7 @@ input[type="radio"].visually-hidden {
 .content-form__list--up-down {
   display: flex;
   justify-content: space-between;
-  
+
   padding: 0;
   list-style-type: none;
 
@@ -1769,13 +1759,9 @@ input[type="radio"].visually-hidden {
 
 .content-form__item {
   display: inline-flex;
-  /* width: max-content; */
+
   font-size: 14px;
   text-transform: uppercase;
-  /* line-height: 1.29; */
-  /* padding: 0 10px; */
-  /* text-decoration: none; */
-  /* align-items: center; */
 }
 
 .content-form__item--up,
@@ -1836,9 +1822,3 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
 }
-
-/*
-.map-link {
-position: relative;
-}
-*/
