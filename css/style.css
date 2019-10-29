@@ -1363,6 +1363,12 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.catalog-modal__container {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 155px;
+  min-height: 34px;
+}
 .catalog-modal__button {
   min-width: 200px;
   min-height: 50px;
