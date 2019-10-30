@@ -9,7 +9,6 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body class="main-page">
   <header class="main-header">
     <nav class="main-navigation">
@@ -45,9 +44,9 @@
   <section class="slider">
     <div class="container">
       <h2 class="visually-hidden">Преимущества</h2>
-      <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-      <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-      <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+      <input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" checked>
+      <input class="visually-hidden product-2" type="radio" id="product-2" name="toggle">
+      <input class="visually-hidden product-3" type="radio" id="product-3" name="toggle">
       <div class="slider__controls">
         <label class="slider__controls-item slider__controls-item--1" for="product-1">Первый</label>
         <label class="slider__controls-item slider__controls-item--2" for="product-2">Второй</label>
@@ -174,7 +173,7 @@
         <h3>NЁRDS DESIGN STUDIO</h3>
         <address class="contacts__address">
           191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8<br>
+          ул. Б. Конюшенная, д. 19/8
           <p>тел.<a class="contacts__tel" href="tel:+7812275-75-75"> +7 (812) 275-75-75</a></p>
         </address>
         <a class="contacts__button btn-style" href="#">
@@ -194,10 +193,10 @@
                   <label class="appointment-form__label" for="appointment-email">Ваш e-mail:</label>
                   <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
                 </li>
-              </ul>
-              <p>Текст письма:</p>
+              <label class="appointment-form__label label__textarea">Текст письма:</label>
               <textarea class="appointment-form__textarea" rows="4" cols="6" name="text"
                 placeholder="В свободной форме"></textarea>
+              </ul>
               <button class="appointment-form__button btn-style" type="submit">Отправить</button>
             </div>
           </form>
