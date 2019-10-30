@@ -180,7 +180,8 @@
           <span>Напишите нам</span>
         </a>
         <div class="contacts__location"></div>
-        <section class="modal appointment__modal">
+        <section class="modal appointment-modal">
+          <div class="appointment-modal__container">
           <form class="appointment-form" method="post">
             <div class="appointment-form__container">
               <h2>Hапишите нам</h2>
@@ -198,11 +199,15 @@
                 placeholder="В свободной форме"></textarea>
               </ul>
               <button class="appointment-form__button btn-style" type="submit">Отправить</button>
-            </div>
-          </form>
+            </form>
+          </div>
           <button class="modal-close" type="button">
             <span class="visually-hidden">Закрыть</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+              <path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
+            </svg>
           </button>
+        </div>
         </section>
         <a class="map-link" href="map.html">
           <span class="visually-hidden"> Карта </span>
@@ -244,5 +249,4 @@
     </div>
   </footer>
 </body>
-
 </html>
