@@ -528,7 +528,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal {
-  /*display:none;*/
+  display:none;
   position: fixed;
   background-color: #ffffff;
 }
@@ -539,9 +539,9 @@ input[type="radio"].visually-hidden {
   top: 4%;
   transform: translate(-85%, -50%);
   width: 960px;
-  
+
   background-color: #ffffff;
-  
+
   z-index: 12;
 
 }
@@ -560,7 +560,7 @@ input[type="radio"].visually-hidden {
 
   border:0;
   background-color: transparent;
-  
+
   outline: none;
   cursor: pointer;
   opacity: 0.4;
@@ -624,7 +624,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .appointment-form__item {
@@ -704,6 +704,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   width: 260px;
   height: 50px;
+  font-weight: 500;
   background-color: #fb565a;
 }
 
@@ -835,6 +836,7 @@ input[type="radio"].visually-hidden {
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
 
   width: 714px;
   padding: 0;
@@ -924,7 +926,7 @@ input[type="radio"].visually-hidden {
 
 .projects__button--red {
   width: 160px;
-  height: 50px;
+  min-height: 13px;
   margin-top: 25px;
   margin-left: 5px;
   padding: 16px 0;
@@ -950,7 +952,7 @@ input[type="radio"].visually-hidden {
 
 .projects__button--green {
   width: 160px;
-  height: 50px;
+  min-height: 13px;
   margin-top: 25px;
   margin-left: 5px;
   padding: 16px 0;
@@ -975,7 +977,7 @@ input[type="radio"].visually-hidden {
 
 .projects__button--yellow {
   width: 160px;
-  height: 50px;
+  min-height: 13px;
   margin-top: 25px;
   margin-left: 5px;
   padding: 16px 0;
@@ -1234,6 +1236,7 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
 
   min-height: 55px;
+  line-height: 1;
 }
 
 .page-sorting {
@@ -1370,6 +1373,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-modal p {
+  max-height: 34px;
   font-size: 16px;
   line-height: 1.13;
   font-weight: 400;
@@ -1744,6 +1748,7 @@ input[type="radio"].visually-hidden {
 .content-form__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 -12px;
   padding: 0;
   list-style-type: none;
