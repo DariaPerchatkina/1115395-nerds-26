@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic,cyrillic-ext"
     rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="main-page">
   <header class="main-header">
@@ -41,182 +41,181 @@
     </nav>
   </header>
   <main>
-  <section class="slider">
-    <div class="container">
-      <h2 class="visually-hidden">Преимущества</h2>
-      <input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" checked>
-      <input class="visually-hidden product-2" type="radio" id="product-2" name="toggle">
-      <input class="visually-hidden product-3" type="radio" id="product-3" name="toggle">
-      <div class="slider__controls">
-        <label class="slider__controls-item slider__controls-item--1" for="product-1">Первый</label>
-        <label class="slider__controls-item slider__controls-item--2" for="product-2">Второй</label>
-        <label class="slider__controls-item slider__controls-item--3" for="product-3">Третий</label>
+    <section class="slider">
+      <div class="container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden product-2" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden product-3" type="radio" id="product-3" name="toggle">
+        <div class="slider__controls">
+          <label class="slider__controls-item slider__controls-item--1" for="product-1">Первый</label>
+          <label class="slider__controls-item slider__controls-item--2" for="product-2">Второй</label>
+          <label class="slider__controls-item slider__controls-item--3" for="product-3">Третий</label>
+        </div>
+        <ul class="slider__list">
+          <li class="slider__item">
+            <h3>Долго, дорого,<br>скрупулезно.</h3>
+            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="slider__item-button button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider__item">
+            <h3>Любим математику как никто другой</h3>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="slider__item-button button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider__item">
+            <h3>Только ночь,<br> только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <a class="slider__item-button button" href="#">Узнать больше</a>
+          </li>
+        </ul>
       </div>
-      <ul class="slider__list">
-        <li class="slider__item">
-          <h3>Долго, дорого,<br>скрупулезно.</h3>
-          <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-          <a class="slider__item-button button" href="#">Узнать больше</a>
-        </li>
-        <li class="slider__item">
-          <h3>Любим математику как никто другой</h3>
-          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a class="slider__item-button button" href="#">Узнать больше</a>
-        </li>
-        <li class="slider__item">
-          <h3>Только ночь,<br> только хардкор</h3>
-          <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-          <a class="slider__item-button button" href="#">Узнать больше</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <div class="container">
-    <h1 class="visually-hidden">Нёрдс</h1>
-    <section class="projects">
-      <ul class="projects__list">
-        <li class="projects__item">
-          <div class="item__img item__img--red"></div>
-          <div class="projects__item item__block">
-            <h3>Веб-сайты</h3>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="projects__button projects__button--red btn-style" href="#"> Заказать</a>
-          </div>
-        </li>
-        <li class="projects__item">
-          <div class="item__img item__img--green"></div>
-          <div class="projects__item item__block">
-            <h3>Приложения</h3>
-            <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-            <a class="projects__button projects__button--green btn-style" href="#"> Заказать</a>
-          </div>
-        </li>
-        <li class="projects__item">
-          <div class="item__img item__img--yellow"></div>
-          <div class="projects__item item__block">
-            <h3>Презентации</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="projects__button projects__button--yellow btn-style" href="#"> Заказать</a>
-          </div>
-        </li>
-      </ul>
     </section>
-    <div class="index-columns">
-      <section class="directions">
-        <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
-          покладая рук, как роботы.</p>
-        <div class="directions directions__block">
-          <h3>Выполняем заказы на разработку:</h3>
-          <ul class="directions__list">
-            <li class="directions__item">
-              <span>Веб-сайтов любой сложности</span>
-            </li>
-            <li class="directions__item">
-              <span>Мобильных приложений для iOS и Android</span>
-            </li>
-            <li class="directions__item">
-              <span>Слайдшоу и видео для корпоративных презентаций</span>
-            </li>
-          </ul>
-        </div>
+    <div class="container">
+      <h1 class="visually-hidden">Нёрдс</h1>
+      <section class="projects">
+        <ul class="projects__list">
+          <li class="projects__item">
+            <div class="item__img item__img--red"></div>
+            <div class="projects__item item__block">
+              <h3>Веб-сайты</h3>
+              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <a class="projects__button projects__button--red btn-style" href="#"> Заказать</a>
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="item__img item__img--green"></div>
+            <div class="projects__item item__block">
+              <h3>Приложения</h3>
+              <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
+              <a class="projects__button projects__button--green btn-style" href="#"> Заказать</a>
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="item__img item__img--yellow"></div>
+            <div class="projects__item item__block">
+              <h3>Презентации</h3>
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+              <a class="projects__button projects__button--yellow btn-style" href="#"> Заказать</a>
+            </div>
+          </li>
+        </ul>
       </section>
-      <section class="advanteges">
-        <h3>С 2004 года любим точность во всем:</h3>
-        <div class="advanteges__block">
-          <dl class="advanteges__list">
-            <div class="advanteges__item">
-              <dt class="item__percent">146<span class="sup">%</span></dt>
-              <dd class="item__result">Уровень самоотдачи</dd>
-            </div>
-            <div class="advanteges__item">
-              <dt class="item__percent">100<span class="sup">%</span></dt>
-              <dd class="item__result">Соблюдение сроков</dd>
-            </div>
-            <div class="advanteges__item">
-              <dt class="item__percent">50<span class="sup">%</span></dt>
-              <dd class="item__result">Минимальная предоплата</dd>
-            </div>
-          </dl>
-        </div>
+      <div class="index-columns">
+        <section class="directions">
+          <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
+            покладая рук, как роботы.</p>
+          <div class="directions directions__block">
+            <h3>Выполняем заказы на разработку:</h3>
+            <ul class="directions__list">
+              <li class="directions__item">
+                <span>Веб-сайтов любой сложности</span>
+              </li>
+              <li class="directions__item">
+                <span>Мобильных приложений для iOS и Android</span>
+              </li>
+              <li class="directions__item">
+                <span>Слайдшоу и видео для корпоративных презентаций</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="advanteges">
+          <h3>С 2004 года любим точность во всем:</h3>
+          <div class="advanteges__block">
+            <dl class="advanteges__list">
+              <div class="advanteges__item">
+                <dt class="item__percent">146<span class="sup">%</span></dt>
+                <dd class="item__result">Уровень самоотдачи</dd>
+              </div>
+              <div class="advanteges__item">
+                <dt class="item__percent">100<span class="sup">%</span></dt>
+                <dd class="item__result">Соблюдение сроков</dd>
+              </div>
+              <div class="advanteges__item">
+                <dt class="item__percent">50<span class="sup">%</span></dt>
+                <dd class="item__result">Минимальная предоплата</dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+      </div>
+      <section class="partners">
+        <ul class="partners__list">
+          <li class="partners__item">
+            <a class="partners__link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML-Academy">
+              <img src="img/htmlacdemy-logo.png" width="199" height="68" alt="htmlacademy">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#" aria-label="Барбершоп Бородинский">
+              <img src="img/borodinsli-logo.png" width="209" height="90" alt="borodinski">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#" aria-label="Pink">
+              <img src="img/pink-logo.png" width="185" height="52" alt="pink">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#" aria-label="Mishka">
+              <img src="img/mishka-logo.png" width="173" height="84" alt="mishka">
+            </a>
+          </li>
+        </ul>
       </section>
-    </div>
-    <section class="partners">
-      <ul class="partners__list">
-        <li class="partners__item">
-          <a class="partners__link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML-Academy">
-            <img src="img/htmlacdemy-logo.png" width="199" height="68" alt="htmlacademy">
-          </a>
-        </li>
-        <li class="partners__item">
-          <a class="partners__link" href="#" aria-label="Барбершоп Бородинский">
-            <img src="img/borodinsli-logo.png" width="209" height="90" alt="borodinski">
-          </a>
-        </li>
-        <li class="partners__item">
-          <a class="partners__link" href="#" aria-label="Pink">
-            <img src="img/pink-logo.png" width="185" height="52" alt="pink">
-          </a>
-        </li>
-        <li class="partners__item">
-          <a class="partners__link" href="#" aria-label="Mishka">
-            <img src="img/mishka-logo.png" width="173" height="84" alt="mishka">
-          </a>
-        </li>
-      </ul>
-    </section>
     </div>
   </main>
   <footer class="main-footer">
-  <section class="contacts main-contacts">
-    <h2 class="visually-hidden">Контакты</h2>
-    <div class="container container__map">
-      <div class="contacts__container">
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <address class="contacts__address">
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8
-          <p>тел.<a class="contacts__tel" href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
-        </address>
-        <a class="contacts__button btn-style" href="#">
-          <span>Напишите нам</span>
-        </a>
-        <div class="contacts__location"></div>
-      <section class="modal appointment-modal">
-        <div class="appointment-modal__container">
-          <form class="appointment-form" method="post">
-            <div class="appointment-form__container">
-              <h2>Hапишите нам</h2>
-              <ul class="appointment-form__list">
-                <li class="appointment-form__item">
-                  <label class="appointment-form__label" for="appointment-name">Ваше имя:</label>
-                  <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-                </li>
-                <li class="appointment-form__item">
-                  <label class="appointment-form__label" for="appointment-email">Ваш e-mail:</label>
-                  <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
-                </li>
-              </ul>
-              <p class="appointment-form__label label__textarea">Текст письма:</p>
-              <textarea class="appointment-form__textarea" rows="5" cols="6" name="text"
-                placeholder="В свободной форме"></textarea>
-              <button class="appointment-form__button btn-style" type="submit">Отправить</button>
+    <section class="contacts main-contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="container container__map">
+        <div class="contacts__container">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <address class="contacts__address">
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
+            <p>тел.<a class="contacts__tel" href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
+          </address>
+          <a class="contacts__button btn-style" href="#">Напишите нам</a>
+          <div class="contacts__location"></div>
+          <section class="modal appointment-modal">
+            <div class="appointment-modal__container">
+              <form class="appointment-form" method="post">
+                <div class="appointment-form__container">
+                  <h2>Hапишите нам</h2>
+                  <ul class="appointment-form__list">
+                    <li class="appointment-form__item">
+                      <label class="appointment-form__label" for="appointment-name">Ваше имя:</label>
+                      <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+                    </li>
+                    <li class="appointment-form__item">
+                      <label class="appointment-form__label" for="appointment-email">Ваш e-mail:</label>
+                      <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
+                    </li>
+                  </ul>
+                  <p class="appointment-form__label label__textarea">Текст письма:</p>
+                  <textarea class="appointment-form__textarea" rows="5" cols="6" name="text"
+                    placeholder="В свободной форме"></textarea>
+                  <button class="appointment-form__button btn-style" type="submit">Отправить</button>
+                </div>
+              </form>
             </div>
-          </form>
+            <button class="modal-close" type="button">
+              <span class="visually-hidden">Закрыть</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                <path fill="#FB565A"
+                  d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z" />
+              </svg>
+            </button>
+          </section>
+          <a class="map-link" href="map.html">
+            <span class="visually-hidden"> Карта </span>
+          </a>
         </div>
-          <button class="modal-close" type="button">
-            <span class="visually-hidden">Закрыть</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-              <path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
-            </svg>
-          </button>
-      </section>
-        <a class="map-link" href="map.html">
-          <span class="visually-hidden"> Карта </span>
-        </a>
       </div>
-    </div>
-  </section>
+    </section>
     <div class="container">
       <div class="footer-social">
         <a class="footer-social__link" href="#">
