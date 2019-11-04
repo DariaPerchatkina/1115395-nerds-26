@@ -169,7 +169,10 @@
   </main>
   <footer class="main-footer">
     <section class="contacts main-contacts">
-      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__iframe">
+          <iframe src="https://yandex.ru/map-widget/v1/-/CGHL6H~Q" width="100%" height="416" frameborder="1" allowfullscreen="true"></iframe>
+      </div> 
+     <h2 class="visually-hidden">Контакты</h2>
       <div class="container container__map">
         <div class="contacts__container">
           <h3>NЁRDS DESIGN STUDIO</h3>
@@ -178,7 +181,7 @@
             ул. Б. Конюшенная, д. 19/8
             <p>тел.<a class="contacts__tel" href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
           </address>
-          <a class="contacts__button btn-style" href="#">Напишите нам</a>
+          <a class="contacts__button btn-style" href="write-us.html">Напишите нам</a>
           <div class="contacts__location"></div>
           <section class="modal appointment-modal">
             <div class="appointment-modal__container">
@@ -201,14 +204,13 @@
                   <button class="appointment-form__button btn-style" type="submit">Отправить</button>
                 </div>
               </form>
+              <button class="modal-close" type="button">
+                <span class="visually-hidden">Закрыть</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                    <path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z" />
+                  </svg>
+              </button>
             </div>
-            <button class="modal-close" type="button">
-              <span class="visually-hidden">Закрыть</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-                <path fill="#FB565A"
-                  d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z" />
-              </svg>
-            </button>
           </section>
           <a class="map-link" href="map.html">
             <span class="visually-hidden"> Карта </span>
@@ -248,69 +250,6 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    var link = document.querySelector(".contacts__button");
-    
-    var popup = document.querySelector(".appointment-modal");
-    var close = popup.querySelector(".modal-close");
-
-    var form = popup.querySelector("form");
-    var name = popup.querySelector("[name=name]");
-    var email = popup.querySelector("[name=email]");
-    var text = popup.querySelector("[name=text]");
-  
-    var isStorageSupport = true;
-    var storage = "";
-  
-    try {
-    storage = localStorage.getItem("name");
-    } catch (err) {
-    isStorageSupport = false;
-    }
-
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-     
-      if (storage) {
-        name.value = storage;
-        email.focus();
-      } else {
-        name.focus();
-      }
-    });
-
-    close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
-  });
-    
-  form.addEventListener("submit", function (evt) {
-    if (!name.value || !email.value || !text.value) {
-      evt.preventDefault();
-      popup.classList.remove("modal-error");
-      popup.offsetWidth = popup.offsetWidth;
-      popup.classList.add("modal-error");
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem("email", email.value);
-      }
-    }
-  });
-
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-       popup.classList.remove("modal-error");
-      }
-    }
-  });
-
-  </script>
-
+  <script src="js/script.min.js"></script>
 </body>
 </html>
